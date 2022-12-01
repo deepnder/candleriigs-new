@@ -1,6 +1,5 @@
 import {  MdDelete } from "react-icons/md";
 import { HiPencil } from "react-icons/hi";
-import dashboardimage from "./AdminImages/dashboardimage.png";
 import { AiOutlinePlus } from "react-icons/ai";
 // import "./ReportsAboutEvent.css";
 import Link from "next/link";
@@ -11,6 +10,10 @@ import Button from "react-bootstrap/Button";
 import dayjs from "dayjs";
 import Form from "react-bootstrap/Form";
 import Modal from "react-bootstrap/Modal";
+import styles from "../Admin/AddBanner.module.css";
+import style from "../Admin/ReportsAboutEvent.module.css";
+import Image from "next/image";
+import dashboardimage from "./AdminImages/dashboardimage.png";
 
 export default function ReportBanner() {
   const [user, setUser] = useState([]);
@@ -52,42 +55,56 @@ export default function ReportBanner() {
     <>
     <div className="exceedContainer">
       <div className="ReportContainer ">
-        <div className="row container">
+        <div className="row container" style={{margin:"0px",padding:"0px"}}>
         <Dashboard/>
-          <div className="ReportEventRightSide col col-sm-6 ">
-            {/* <div className="dashboardHeadings">
-              <span className="DashboardBox">
-                <img src={dashboardimage} alt="" />
-                <img className="dashboardwrite" src={Dashboardwrite} alt="" />
-              </span>
-            </div> */}
-             <div className="dashboardHeadings">
-                <span className="DashboardBox" style={{'display':'flex'}}>
-                  <img src={dashboardimage} style={{'width':'20px','height':'22px','marginTop':"4px"}} alt="" />
-                  {/* <img className="dashboardwrite" src={Dashboardwrite} alt="" /> */}
-                  <h5 style={{"fontSize":"25px",'fontWeight':'500','marginLeft':"10px",'color':"white"}}>Dashboard</h5>
+          <div className="ReportEventRightSide col col-sm-6 " style={{marginLeft:"1.5rem"}}>
+          <div
+                className={styles.dashboardHeadings}
+                style={{ background: "#270F33" }}
+              >
+                <span
+                  className={styles.DashboardBox}
+                  style={{ display: "flex" }}
+                >
+                  <Image
+                    src={dashboardimage}
+                    style={{ width: "20px", height: "22px", marginTop: "8px" }}
+                    alt=""
+                  />
+                  <h5
+                    style={{
+                      fontSize: "25px",
+                      fontWeight: "500",
+                      marginLeft: "10px",
+                      color: "white",
+                      marginTop: "5.6px",
+                    }}
+                  >
+                    Dashboard
+                  </h5>
                 </span>
               </div>
-            <div className="ReportsHeadings">
+            <div className={style.ReportsHeadings}>
               <h5>Home page Banners</h5>
-              <div className="SearchAdd row">
-                <div className="ReportSearch col-6">
+              <div className={style.SearchAdd} style={{display:"flex"}}>
+                <div className={style.ReportSearch}>
                   <input
-                    type="search"
+                    type="search" style={{ width: "52.5rem", height:"4rem",borderRadius:"10px",border: "solid #dadde0" }}
                     name=""
                     id=""
                     placeholder="&#128269; Search"
                   />
                 </div>
-                <div className="AddLeadForm col-6">
-              <Link href="/add-banner">   <button>
+                <div className={style.AddLeadForm}  >
+              <Link href="/add-banner">   <button style={{border:"none"}}>
+
                     Add Banner <AiOutlinePlus className="leadIcon" />{" "}
                   </button></Link> 
                 </div>
               </div>
-              <div className="reportTable">
+              <div className={style.reportTable}>
                 <table>
-                  <tr className="tableheading">
+                  <tr className={style.tableheading}>
                     <th colSpan="1">Banner Name</th>
                     <th colSpan="1">Listing From</th>
                     <th colSpan="1">Listing To</th>
@@ -95,9 +112,8 @@ export default function ReportBanner() {
                     <th colSpan="1">Delete</th>
                   </tr>
                   {user && user.length ? user.map((userss, i) => (
-                    <tr className="tableData"  key={i}>
+                    <tr className={style.tableData}  key={i}>
                       <td>{userss.bannerName}</td>
-                      {/* <td>{userss.price}</td> */}
                       <td>{dayjs(userss.bannerStartDate).format("MMM D YYYY")}</td>
                       <td>{dayjs(userss.bannerEndDate).format("MMM D YYYY") }</td>
                       <td>

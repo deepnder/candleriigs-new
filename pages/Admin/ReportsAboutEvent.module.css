@@ -61,7 +61,6 @@
   opacity: 60%;
 }
 .AddLeadForm button{
-    margin-left:33.6rem;
     background: #FBD07A;
 color:  #003831;;
 border: none;
@@ -69,6 +68,8 @@ border-radius: 6px;
     width: 12rem;
     margin-top: 0.4rem;
     height: 4rem;
+    position: absolute;
+    left: 71rem;
 
 }
 .AddLeadForm button .leadIcon{
@@ -80,7 +81,10 @@ border-radius: 6px;
     width: 100%;
 }
 .reportTable table{
-    width: 176%;
+    width: 164%;
+}
+.AddLeadForm {
+  margin-left: -32.5rem;
 }
 .tableheading{
     border: none;

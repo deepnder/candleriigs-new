@@ -1,14 +1,13 @@
 
-import dashboardimage from "./AdminImages/dashboardimage.png";
-// import { useNavigate, useParams } from "react-router-dom";
-import TimeDot from "./AdminImages/TimeDot.png";
-// import "./AddBanner.css";
+import styles from "../Admin/AddBanner.module.css"
 import axios from "axios";
 import { useState, useEffect } from "react";
 import Dashboard from "./Dashboard";
 import ButtonLoader from "./ButtonLoader";
 import { ThreeDots } from "react-loader-spinner";
 import Lines from "../Admin/AdminImages/Lines.png"
+import dashboardimage from "../Admin/AdminImages/dashboardimage.png"
+import Image from "next/image"
 
 
 export default function PutBanner() {
@@ -144,46 +143,39 @@ export default function PutBanner() {
  
   return (
     <>
-    <div className="exceedContainer">
-      <div className="EventContainer ">
-        <div className="row container">
+      <div className={styles.EventContainer}>
+        <div className= "row container" style={{padding:"0px" ,margin:"0px"}}>
           <Dashboard />
-          <div className="addBannerRightSide col col-sm-6 ">
+          <div className="col col-sm-6" style={{marginLeft:"1rem"}}>
             <form onSubmit={handleSubmit}>
-              {/* <div className="dashboardHeadings">
-                <span className="DashboardBox">
-                  <img src={dashboardimage} alt="" />
-                  <img className="dashboardwrite" src={Dashboardwrite} alt="" />
-                </span>
-              </div> */}
-               <div className="dashboardHeadings">
-                <span className="DashboardBox" style={{'display':'flex'}}>
-                  <img src={dashboardimage} style={{'width':'20px','height':'22px','marginTop':"4px"}} alt="" />
-                  {/* <img className="dashboardwrite" src={Dashboardwrite} alt="" /> */}
-                  <h5 style={{"fontSize":"25px",'fontWeight':'500','marginLeft':"10px",'color':"white"}}>Dashboard</h5>
+        
+               <div className={styles.dashboardHeadings} style={{background:"#270F33"}}>
+                <span className={styles.DashboardBox}  style={{'display':'flex'}}>
+                  <Image src={dashboardimage} style={{'width':'20px','height':'22px','marginTop':"8px"}} alt="" />
+                  <h5 style={{"fontSize":"25px",'fontWeight':'500','marginLeft':"10px",'color':"white",'marginTop':"5.6px"}}>Dashboard</h5>
                 </span>
               </div>
-              <div className="h2">
+              <div className={styles.h2}>
                 <h5>Edit Banner</h5>
               </div>
-              <div className="uploadingBanner">
-                <div className="dragingImageBanner">
-                  <div className="dragingparaBanner">
+              <div className={styles.uploadingBanner}>
+                <div className={styles.dragingImageBanner}>
+                  <div className= {styles.dragingparaBanner}>
                     <div className="row row-cols-md-1 g-4">
-                      <div className="col">
-                        <div className="uploadingBanner2">
+                      <div className="col" >
+                        <div className={styles.uploadingBanner2}>
                           <h5>Upload Main Image - 1440x692</h5>
                           <p>
                             Supports: JPG , PNG , SVG , GIF , JPEG (Max Size : 3MB)
                           </p>
                         </div>
 
-                        <div className="LinesImagesBanner">
+                        <div className={styles.LinesImagesBanner}>
                           {/* these are just 80% of the 1440x692 so it fits on my laptop screen but keeps the ratio */}
                           <img src={Lines} alt="" style={{width:"1024px",height:"553px"}} />
                         </div>
 
-                        <div className="dragingpara2">
+                        <div className={styles.dragingpara2}>
                           {selectedFile ? (
                             selectedFile && (
                               <img
@@ -212,7 +204,6 @@ export default function PutBanner() {
                               {selectedFile && (
                                 <img alt="preview" src={preview} />
                               )}
-                              {/* <p style={{marginLeft:"-2.5rem"}}>Drag and drop or browse to choose a file</p> */}
                             </label>
                           )}
 
@@ -229,18 +220,18 @@ export default function PutBanner() {
                         </div>
                       </div>
 
-                      <div style={{ marginLeft: "0rem" }} className=" col">
-                        <div className="uploadingBanner2">
+                      <div style={{ marginTop: "16rem" }} className=" col">
+                        <div className={styles.uploadingBanner2}>
                           <h5>Upload Main Image (Mobile version) - 640x360</h5>
                           <p>
                             Supports : PNG, JPEG (Max Size : 500 KB)
                           </p>
                         </div>
-                        <div className="LinesImagesBanner">
-                          <img src={Lines} alt="" style={{width:"640px",height:"360px"}}/>
+                        <div className={styles.LinesImagesBanner}>
+                          <img src={Lines} alt="" style={{width:"645px",height:"360px"}}/>
                         </div>
 
-                        <div className="dragingpara2">
+                        <div className={styles.dragingpara2} >
                           {selectedFilephone ? (
                             selectedFilephone && (
                               <img
@@ -255,7 +246,7 @@ export default function PutBanner() {
                               />
                             )
                           ) : (
-                            <label htmlFor="addMobileBannerImage">
+                            <label htmlFor="addMobileBannerImage" >
                               <img
                                 style={{
                                   marginTop:"-7.5rem",
@@ -264,12 +255,11 @@ export default function PutBanner() {
                                   height:"360px"
                                 }}
                                 src={data.addMobileBannerImage}
-                                alt=""
+                                alt="preview"
                               />
                               {selectedFilephone && (
                                 <img alt="preview" src={previews} />
                               )}
-                              {/* <p style={{marginLeft:"-2.5rem"}}>Drag and drop or browse to choose a file</p> */}
                             </label>
                           )}
                           <input
@@ -280,21 +270,20 @@ export default function PutBanner() {
                             name=""
                             style={{ display: "none" }}
                           ></input>
-                          {/* <p>Drag and drop or browse to choose a file</p>
-                        {selectedFilephone && <img src={previews}/>} */}
+                        
                         </div>
                       </div>
                     </div>
                   </div>
                 </div>
               </div>
-              <div className="formStartBanner">
+              <div className={styles.formStartBanner} style={{marginTop:"15rem"}}>
                 <div className="mb-3">
                   <label htmlFor="bannerName" className="form-label">
                     Banner Name
                   </label>
                   <input
-                    type="text"
+                    type="text" style={{height:"3rem" ,width:"45rem",boxShadow:" 0px 0px 2px rgb(118, 108, 108)",padding:"12px",fontSize:"12px"}}
                     placeholder="Enter Banner Name"
                     className="form-control"
                     id="bannerName"
@@ -304,14 +293,14 @@ export default function PutBanner() {
                     maxLength={30}
                   />
                 </div>
-                <span className="characterEdit">30 Character</span>
+                <span className={styles.characterEdit}>30 Character</span>
 
                 <div className="mb-3">
                   <label htmlFor="bannerLink" className="form-label">
                     Banner Link
                   </label>
                   <input
-                    type="text"
+                    type="text" style={{height:"3rem" ,width:"45rem",boxShadow:" 0px 0px 2px rgb(118, 108, 108)",padding:"12px",fontSize:"12px"}}
                     placeholder="Banner Title"
                     className="form-control"
                     id="bannerLink"
@@ -324,19 +313,26 @@ export default function PutBanner() {
                 <br />
                 <br />
                 {/* //start time// */}
-                <div className="startTime">
+                <div className={styles.startTime}>
                   <h5>Banner Duration</h5>
-                  <div className="container">
+                  <div className="container" style={{marginLeft:"-1.5rem"}}>
                     <div className="row row-cols-3">
                      
                       <div className="timeHeading datenewStyle  TimeHeadingTime col">
                         <p>Banner Start Date</p>{" "}
-                        <input
+                        <input 
                           type="date"
-                          name="date"
-                          id="bannerStartDate"
+                          name="date" className={styles.dateBanner}
+                          id="bannerStartDate" 
                           onChange={handleFileSelect}
-                          
+                          style={{
+                            width: "11rem",
+                            height: "2.9rem",
+                            fontSize: "13px",
+                            borderRadius: "10px",
+                            padding: "10px",
+                            border: "solid #dadde0",
+                          }}
                           value={data.bannerStartDate.slice(0,10)}
                         />
                       </div>
@@ -344,13 +340,20 @@ export default function PutBanner() {
                         <p>Banner End Date</p>{" "}
                         <input
                           type="date"
-                          name="date"
-                          id="bannerEndDate"
+                          name="date" className={styles.dateBanner}
+                          id="bannerEndDate" style={{
+                            width: "11rem",
+                            height: "2.9rem",
+                            fontSize: "13px",
+                            borderRadius: "10px",
+                            padding: "10px",
+                            border: "solid #dadde0",
+                          }}
                           value={data.bannerEndDate.slice(0,10)}
                           onChange={handleFileSelect}
                         />
                       </div>
-                      <div className=" col" style={{"marginTop":"31px"}}>
+                      <div className=" col" >
                           <label
                             htmlFor="eventType"
                           >
@@ -384,7 +387,8 @@ export default function PutBanner() {
                     </div>
                   </div>
                 </div>
-                <div className="submitButton">
+             
+                <div className="submitButton"style={{marginTop:"7rem"}} >
                 {isButtonDisabled === false ? (
                       <button
                         className="button btn-danger"
@@ -416,7 +420,6 @@ export default function PutBanner() {
             </form>
           </div>
         </div>
-      </div>
       </div>
     </>
   );

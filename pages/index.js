@@ -21,17 +21,15 @@ const Navbar = dynamic(() => import("./NavBar"), {
 const Footer = dynamic(() => import("./Footer"), {
   ssr: false
 });
-export default function index({posts}) {
-  const [item, setItem] = useState([]);
+export default function index(props) {
+  const [item, setItem] = useState(props.posts.eventData);
   const [items, setItems] = useState([]);
   const [user, setUser] = useState([]);
   // const [event, setEvent] = useState([]);
   const [search, setSearch] = useState("");
-  useEffect(()=>{
-    setItem(posts.eventData)
-  },[]);
+  
   const allevents = () => {
-    setItems(posts.eventData)
+    setItems(props.posts.eventData)
   };
   const fetchData = async () => {
     const response = await fetch(
