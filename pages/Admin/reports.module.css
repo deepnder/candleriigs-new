@@ -1,0 +1,8 @@
+.tabledata2 td button{
+    border: none;
+    background: transparent;
+}
+.tabledata2 td{
+    margin-top: 2rem;
+    padding: 0.6rem;
+}

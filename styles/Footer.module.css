@@ -1,0 +1,317 @@
+.footer {
+    user-select: auto;
+    background: #270F33;
+    color: white;
+    padding: 2rem 0rem;
+    font-family: 'Roboto', sans-serif;
+  }
+  .email_box h5 {
+    font-family: 'Roboto', sans-serif;
+    
+  }
+  
+  .class_left{
+    display:flex ;
+    flex-direction: column;
+  }
+  .email {
+    user-select: auto;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+  }
+  
+  @media screen and (min-width:1440px) {
+    .email {
+      -webkit-user-select: auto;
+      user-select: auto;
+      display: flex;
+      align-items: center;
+      margin: 0 auto;
+      gap: 20rem;
+      margin-left: -4rem;
+      font-family: 'Roboto', sans-serif;
+  }
+  .email_box h5 {
+    font-size: 24px;
+    margin-bottom: 15px;
+    margin-top: 10px;
+    margin-left: 35px;
+  }
+  
+  }
+  .email_box {
+    user-select: auto;
+    border: 2px solid rgba(251, 208, 122, 1);
+    border-radius: 1.5rem;
+    padding: 2rem 1.5rem;
+  }
+  .contact h4 {
+    font-family: 'Roboto', sans-serif;
+    font-size: 24px;
+    margin-bottom: 10px;
+    margin-top: 10px;
+  }
+  .form_box {
+    display: flex;
+  }
+  .footer form {
+    display: flex;
+  }
+  .footer form input {
+    padding-left: 0.5rem;
+    padding-right: 6rem;
+    padding-top: 0.8rem;
+    padding-bottom: 0.8rem;
+    width: 20rem;
+  }
+  .footer form input {
+    border-radius: 8px;
+    margin-left: 35px;
+  }
+  .footer form button {
+    position: relative;
+    right: 5.2rem;
+    background-color: #fbd07a;
+    border: 1px;
+    border-radius: 9px;
+    height: 34px;
+    width: 75px;
+    top: 6px;
+  }
+  .contact_links:active {
+    color:rgb(251, 122, 128);
+    text-decoration-line: underline;
+  }
+  .display_email{
+    font-size: 14px;
+    width: 21rem;
+    color: #ffffff;
+  }
+  @media screen and ( min-width:320px ) and (max-width:359px) {
+    .searchfoote{
+      position: relative;
+      top:8px;
+    }
+    .display_email {
+      font-size: 14px;
+      width: 17rem;
+      color: #ffffff;
+  }
+    .email {
+      -webkit-user-select: auto;
+      user-select: auto;
+      display: flex;
+      justify-content: space-around;
+      align-items: center;
+      flex-direction: column;
+  }
+  .email_box {
+    -webkit-user-select: auto;
+    user-select: auto;
+    border: 2px solid rgba(251, 208, 122, 1);
+    border-radius: 1.5rem;
+    padding: 2rem 2rem;
+    width: 20rem;
+  }
+  .footer {
+    -webkit-user-select: auto;
+    user-select: auto;
+    background: rgba(0, 56, 49, 1);
+    color: white;
+    padding: 3rem 0rem;
+    margin-top: 6rem;
+    width: 100%;
+    margin-bottom: 0rem;
+    margin-top: 4rem;
+  }
+  .footer form input {
+    /* padding-left: -24rem; */
+    padding-right: 7rem;
+    padding-top: 0.8rem;
+    padding-bottom: 0.8rem;
+    width: 15rem;
+    font-size: 9px;
+    margin-left: 0px;
+  }
+  .footer form {
+    display: flex;
+    background: darkblue;
+    width: 0rem;
+  }
+  .footer_div{
+    display: flex;
+  }
+  .footet_social{
+    margin-left: 30px;
+  }
+  .contact {
+    margin-top: 2rem;
+  }
+  .contact p:nth-child(2){
+  margin-top: 1rem;
+  }
+  .footer form button {
+    position: relative;
+    right: 3.2rem;
+    background-color: #fbd07a;
+    border: 1px;
+    border-radius: 9px;
+    height: 28px;
+    font-size: 12px;
+    padding: 4px;
+    width: 56px;
+    top: 6px;
+  }
+  }
+  @media screen and ( min-width:359px ) and (max-width:480px) {
+    .displayemail {
+      font-size: 14px;
+      font-family: "Roboto-Regular";
+      width: 17rem;
+      color: #ffffff;
+  }
+    .email {
+      -webkit-user-select: auto;
+      user-select: auto;
+      display: flex;
+      justify-content: space-around;
+      align-items: center;
+      flex-direction: column;
+  }
+  .email_box {
+    -webkit-user-select: auto;
+    user-select: auto;
+    border: 2px solid rgba(251, 208, 122, 1);
+    border-radius: 1.5rem;
+    padding: 2rem 3.7rem;
+    width: 21.5rem;
+  }
+  .footer_div{
+    display: flex;
+  }
+  .footet_social{
+    margin-left: 54px;
+  }
+  .footer {
+    -webkit-user-select: auto;
+    user-select: auto;
+    background: rgba(0, 56, 49, 1);
+    color: white;
+    padding: 2rem 0rem;
+    margin-top: 6rem;
+    width: 100%;
+
+margin-bottom: 0rem;
+    margin-top: 4rem;
+  }
+  .footer form input {
+    padding-top: 0.8rem;
+    padding-bottom: 0.8rem;
+    width: 16rem;
+  }
+  .footer form {
+    display: flex;
+    background: darkblue;
+    width: 0rem;
+  }
+  .contact {
+    margin-top: 2rem;
+  }
+  .contact p:nth-child(2){
+  margin-top: 1rem;
+  }
+  .footer form button {
+    position: relative;
+    right: 4.2rem;
+    background-color: #fbd07a;
+    border: 1px;
+    border-radius: 9px;
+    height: 34px;
+    font-size: 15px;
+    padding: 6px;
+    width: 63px;
+    top: 6px;
+  }
+  .form_box {
+    margin-left: -39px;
+}
+  }
+  @media screen and ( min-width:480px ) and (max-width:576px) {
+    .email {
+      -webkit-user-select: auto;
+      user-select: auto;
+      display: flex;
+      justify-content: space-around;
+      align-items: center;
+      flex-direction: column;
+  }
+  .email_box {
+    -webkit-user-select: auto;
+    user-select: auto;
+    border: 2px solid rgba(251, 208, 122, 1);
+    border-radius: 1.5rem;
+    padding: 2rem 3.7rem;
+    width: 30rem;
+  }
+  .footer {
+    -webkit-user-select: auto;
+    user-select: auto;
+    background: rgba(0, 56, 49, 1);
+    color: white;
+    padding: 2rem 0rem;
+    margin-top: 6rem;
+    width: 100%;
+  }
+  .contact {
+    margin-top: 2rem;
+  }
+  .contact p:nth-child(2){
+  margin-top: 1rem;
+  }
+  .footer form input {
+    border-radius: 8px;
+    margin-left: 4px;
+  }
+  }
+  /*  .contact h4 {
+    font-family: 'Roboto', sans-serif;
+    font-size: 24px;
+    margin-bottom: 10px;
+    margin-top: 10px;
+  } */
+  @media screen and (min-width:556px) and (max-width:5000px){
+    .email_box h5{
+      margin-left: 36px;
+    }
+  }
+  @media screen and (min-width:768px) and (max-width:1250px) {
+    .email-box{
+      padding: 3rem 2rem;
+    }
+    .footer form input{
+      padding-right: 7rem;
+    }
+    .contact {
+      font-size: 15px;
+    }
+  }
+  @media (min-width: 556px) and (max-width: 767px){
+    .email-box {
+      -webkit-user-select: auto;
+      user-select: auto;
+      border: 2px solid rgba(251, 208, 122, 1);
+      border-radius: 1.5rem;
+      padding: 3rem 2rem;
+  }
+  .email {
+   
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-direction: column;
+  }
+  .contact{
+    margin-top: 15px;
+  }
+  }

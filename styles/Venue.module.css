@@ -1,0 +1,1775 @@
+@import url('https://fonts.googleapis.com/css2?family=Rochester&display=swap');
+  .event_rowStart {
+    width: 100%;
+  }
+
+  .card-img-top5 {
+    width: 207%;
+  }
+  
+  .sideImageheading {
+    font-family: "Rochester", cursive;
+    font-size: 3.125rem;
+    color: #000000;
+  }
+  .event_Col1 img {
+    border: 20px solid #fbd07a;
+    border-top-left-radius: 9.375rem;
+    z-index: 1;
+   
+    width: 43.438rem;
+      height: 27.125rem;
+  }
+  
+  .event_Col2 img {
+    border: 20px solid #003831;
+    border-bottom-right-radius: 169.737px;
+    z-index: -1;
+    position: relative;
+  
+    right: 5.563rem;
+    top: 0.125rem;
+    width: 43.313rem;
+    height: 26.688rem;
+  }
+  
+  .card-body .card-padding {
+    position: relative;
+    top: 3.125rem;
+    left: 5.313rem;
+  }
+  .card-position {
+    position: relative;
+    top: 3.125rem;
+    left: 3.938rem;
+  }
+  .card-items {
+    position: relative;
+    top: 2.813rem;
+    width: 32.125rem;
+    height: 8rem;
+    text-align: center;
+  }
+  .Book_Venue_container h3 {
+    display: flex;
+    margin-top: 3%;
+    justify-content: center;
+    margin-bottom: 8%;
+    font-size: 1.875rem;
+    font-weight: 700;
+    font-family: "Roboto";
+  }
+  .Book_Venue_description {
+    display: flex;
+    flex-direction: column;
+    width: 79.188rem;
+    height: 4.875rem;
+    text-align: center;
+    font-size: 1.625rem;
+    font-family: "Roboto";
+    font-weight: 400;
+    line-height:1.875rem;
+    flex-wrap: wrap;
+    margin-bottom: 5rem;
+  }
+  .Book_button {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 7%;
+    margin-top: 8px;
+  }
+  .Book_button a {
+    text-decoration: none;
+    color: black;
+    font-weight: 600;
+    font-size: 1.375rem;
+    border: 1.28529px solid #fbd07a;
+    border-radius: 12.8529px;
+    padding: 0.625rem 1.625rem;
+  }
+  
+  
+  
+  .event_rowStart {
+    margin-top: 1.25rem;
+  }
+  .event_main_section {
+    display: flex;
+    margin: auto;
+  }
+  
+  .section_main_container {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    z-index: 1;
+    margin-left: 10%;
+    position: absolute;
+    top: 117rem;
+    margin-top: 60px;
+  }
+  
+  .para_section {
+    
+    width: 31%;
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    background-color: #fbd07a;
+    padding: 3.063rem;
+    margin-right: 10%;
+    border-radius: 10px;
+  }
+  .para_section p {
+    font-family: "Roboto";
+    font-style: normal;
+    font-weight: 400;
+    font-size: 1.125rem;
+    line-height: 1.313rem;
+    text-align: center;
+  
+    color: #000000;
+  }
+  .right_section {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    justify-self: center;
+    z-index: -1;
+    background: url(../Images/backgroundFive.png);
+    position: relative;
+    bottom:0rem;
+    top: 4rem;
+    width: 100%;
+    padding: 3rem;
+    margin-bottom: 23rem;
+  }
+  
+  .top_image img {
+    padding: 10px;
+  }
+  /* .top_image:hover{
+    box-shadow: 0 2.5rem 4rem rgb(0 0 0 / 50%);
+      -webkit-transform: scale(1.05) translateY(-0.5rem);
+      transform: scale(1.05) translateY(-0.5rem);
+      transition: 0.5s all ease-in-out;
+      z-index: 1;
+  } */
+  
+  .horizontal_image img {
+    padding: 10px;
+  }
+  /* .horizontal_image:hover{
+    box-shadow: 0 2.5rem 4rem rgb(0 0 0 / 50%);
+      outline: 1rem solid #373333;
+      -webkit-transform: scale(1.05) translateY(-0.5rem);
+      transform: scale(1.05) translateY(-0.5rem);
+      transition: 0.5s all ease-in-out;
+      z-index: 1;
+  } */
+  .main_horizontal_img img {
+    padding: 10px;
+  }
+  /* .main_horizontal_img:hover{
+    box-shadow: 0 2.5rem 4rem rgb(0 0 0 / 50%);
+      outline: 1rem solid #373333;
+      -webkit-transform: scale(1.05) translateY(-0.5rem);
+      transform: scale(1.05) translateY(-0.5rem);
+      transition: 0.5s all ease-in-out;
+      z-index: 1;
+  } */
+  
+  .section_main_container span img {
+    position: relative;
+    bottom: -57px;
+    right: 8px;
+  }
+  .corner_left {
+    position: relative;
+    left: 36.5rem;
+    bottom: 3.625rem;
+  }
+  .whatsappImage {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    align-items: flex-end;
+    margin-top: 13rem;
+    margin-left: 1rem;
+  }
+  
+  .whatsapp a{
+    margin-left: 1.5rem;
+  }
+   .card_heading   h5{
+    font-family: 'Rochester';
+      font-size: 46px;
+      padding: -38px;
+      width: 484px;
+      align-items: center;
+      text-align: center;
+      position: relative;
+      bottom: 81px;
+      top: -66px;
+  
+  }
+  .section_main_left{
+    margin-top: -6rem;
+  }
+  .main_top_venue_head{
+    font-size: 50px;
+  }
+  .cardevent1{
+    margin-top: 2rem;
+    font-size: 50px;
+    font-family: 'Rochester', cursive;
+  }
+  /* 320 to 358 */
+  @media screen and (min-width:320px) and (max-width:360px) {
+    .event_main_section {
+      display: flex;
+      /* margin: 7px; */
+      margin-left: 1rem;
+  }
+  .venuesStarting {
+    width: 100%;
+    overflow: hidden;
+    margin-top: 0rem;
+  }
+    .event_Col1.col.container {
+      margin-left: -1rem;
+  }
+    .event_Col1 img {
+      border: 12px solid #fbd07a;
+      border-top-left-radius: 4.375rem;
+      z-index: 1;
+      width: 170px;
+      height: 121px;
+    position: relative;
+    left: 1.7rem;
+  }
+  .event_Col2 img {
+    border: 12px solid #270F33;
+    border-bottom-right-radius: 4.375rem;
+    z-index: -1;
+    position: relative;
+    right: -6.437rem;
+    top: -20.875rem;
+    width: 170px;
+    height: 121px;
+  }
+  
+  h5.cardEvent {
+    /* margin-top: 2rem; */
+    position: relative;
+    top: -24.7rem;
+    font-size: 11px;
+    width: 128px;
+    left: 4.5rem;
+  }
+  h5.cardEight {
+    font-size: 17px;
+    width: 9rem;
+    top: -4rem;
+    position: relative;
+  }
+  .Book_Venue_container.container {
+    margin-top: -19rem;
+  }
+  .Book_Venue_description {
+    display: flex;
+    flex-direction: column;
+    width: 79.188rem;
+    height: 16.875rem;
+    text-align: center;
+    font-size: 17.625px;
+    font-family: "Roboto";
+    font-weight: 400;
+    line-height: 1.875rem;
+    flex-wrap: wrap;
+    display: contents;
+  }
+  .section_main_left {
+    margin-top: -75.4rem;
+    margin-left: -0.5rem;
+  }
+  .Book_Venue_container {
+    margin-top: -5rem;
+}
+  .top_image img {
+    padding: 8px;
+    width: 9rem;
+    height: auto;
+  }
+  .horizontal_image img {
+    padding: 10px;
+    width: 9rem;
+    height: auto;
+
+  }
+  .main_horizontal_img img {
+    padding: 10px;
+    width: 18rem;
+    height: auto;
+
+  }
+  .corner_left {
+    position: relative;
+    left: 15.2rem;
+    color: black;
+    bottom: 2.625rem;
+    width: 3rem;
+  }
+  .section_main_container span img {
+    position: relative;
+    bottom: -40px;
+    right: 6px;
+    width: 3rem;
+  }
+  .right_section {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    justify-self: center;
+    z-index: -1;
+    background: url(../Images/backgroundFive.png);
+    position: relative;
+    bottom: -9rem;
+    margin-top: 11rem;
+    width: 77%;
+    margin-left: 1rem;
+    /* padding: 3rem; */
+    margin-bottom: 15rem;
+  
+  }
+  .para_section {
+    width: 231px;
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    background-color: #fbd07a;
+    padding: 6.063rem;
+    margin-top: 16rem;
+    height: 604px;
+    margin-right: -27%;
+    border-radius: 10px;
+  }
+  .para_section p {
+    font-family: "Roboto";
+    font-style: normal;
+    font-weight: 400;
+    font-size: 0.87rem;
+    line-height: 1.313rem;
+    text-align: center;
+    color: #000000;
+    width: 14rem;
+  }
+  .whatsappImage {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    align-items: flex-end;
+    margin-top: 6rem;
+    margin-left: 1rem;
+    margin-bottom: -6rem;
+  }
+  .cardevent1{
+    font-size: 14px;
+    margin-top: 2rem;
+  }
+  .event_main_section {
+    display: flex;
+    margin: 7px;
+    margin-left: 21rem;
+    justify-content: center;
+    align-content: center;
+    /* margin: auto; */
+    flex-direction: row;
+    width: auto;
+  }
+  .event_Col2 img {
+    border: 12px solid #270F33;
+    border-bottom-right-radius: 5.375rem;
+    z-index: -1;
+    position: relative;
+    right: 22.2rem;
+    top: 0rem;
+  }
+  .cardevent1
+  {
+    font-size: 23px;
+  }
+  h5.cardEvent {
+    margin-top: 2rem; 
+    position: relative;
+    top: -3rem;
+    font-size: 11px;
+    width: 177px;
+    left: -24.8rem;
+  }
+  }
+  
+    @media screen and (min-width:360px) and (max-width:480px) {
+    
+  .cardevent1{
+    font-size: 14px;
+    margin-top: 2rem;
+  }
+  .venuesStarting {
+    width: 100%;
+    overflow: hidden;
+    margin-top: 0rem;
+  }
+    .event_Col1.col.container {
+      margin-left: -1rem;
+  }
+    .event_Col1 img {
+      border: 12px solid #fbd07a;
+      border-top-left-radius: 4.375rem;
+      z-index: 1;
+      width: 174px;
+      height: 121px;
+      position: relative;
+      left: 1.2rem;
+  }
+  .event_Col2 img {
+    border: 12px solid #270F33;
+    border-bottom-right-radius: 4.375rem;
+    z-index: -1;
+    position: relative;
+    right: -9.437rem;
+    top: -20.875rem;
+    width: 174px;
+    height: 121px;
+  }
+  
+  h5.cardEvent {
+    /* margin-top: 2rem; */
+    position: relative;
+    top: -24.5rem;
+    font-size: 12px;
+    width: 131px;
+    left: 6.5rem;
+  }
+  h5.cardEight {
+    font-size: 17px;
+    width: 9rem;
+    top: -4rem;
+    position: relative;
+  }
+  .Book_Venue_container.container {
+    margin-top: -19rem;
+  }
+  .Book_Venue_description {
+    display: flex;
+    flex-direction: column;
+    width: 79.188rem;
+    height: 16.875rem;
+    text-align: center;
+    font-size: 17.625px;
+    font-family: "Roboto";
+    font-weight: 400;
+    line-height: 1.875rem;
+    flex-wrap: wrap;
+    display: contents;
+  }
+  .section_main_left {
+    margin-top: -74rem;
+    margin-left: 0.5rem;
+  }
+  .Book_Venue_container {
+    margin-top: -5rem;
+}
+  .top_image img {
+    padding: 8px;
+    width: 10rem;
+    height: auto;
+  }
+  .horizontal_image img {
+    padding: 10px;
+    width: 10rem;
+    height: auto;
+
+  }
+  .main_horizontal_img img {
+    padding: 10px;
+    width: 20rem;
+    height: auto;
+
+  }
+  .corner_left {
+    position: relative;
+    left: 17.2rem;
+    color: black;
+    bottom: 2.625rem;
+    width: 3rem;
+  }
+  .section_main_container span img {
+    position: relative;
+    bottom: -40px;
+    right: 6px;
+    width: 3rem;
+  }
+  .right_section {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    justify-self: center;
+    z-index: -1;
+    background: url(../Images/backgroundFive.png);
+    position: relative;
+    bottom: -9rem;
+    margin-top:11rem;
+    width: 77%;
+    margin-left: 1rem;
+    /* padding: 3rem; */
+    margin-bottom: 19rem;
+  }
+  .para_section {
+    width: 231px;
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    background-color: #fbd07a;
+    padding: 6.063rem;
+    margin-top: 20rem;
+    height: 604px;
+    margin-right: -7%;
+    border-radius: 10px;
+  }
+  .para_section p {
+    font-family: "Roboto";
+    font-style: normal;
+    font-weight: 400;
+    font-size: 0.87rem;
+    line-height: 1.313rem;
+    text-align: center;
+    color: #000000;
+    width: 14rem;
+    
+  }
+  .whatsappImage {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    align-items: flex-end;
+    margin-top: 6rem;
+    margin-left: 1rem;
+    margin-bottom: -6rem;
+  }
+  .event_main_section {
+    display: flex;
+    margin: 7px;
+    margin-left: 21rem;
+    justify-content: center;
+    align-content: center;
+    /* margin: auto; */
+    flex-direction: row;
+    width: auto;
+  }
+  .event_Col2 img {
+    border: 12px solid #270F33;
+    border-bottom-right-radius: 5.375rem;
+    z-index: -1;
+    position: relative;
+    right: 21rem;
+    top: 0rem;
+  }
+  .cardevent1
+  {
+    font-size: 23px;
+  }
+  h5.cardEvent {
+    margin-top: 2rem; 
+    position: relative;
+    top: -3rem;
+    font-size: 12px;
+    width: 177px;
+    left: -24.2rem;
+  }
+  }
+
+  @media screen and (min-width:480px) and (max-width:576px) {
+    .event_main_section {
+      display: flex;
+      margin: 7px;
+      margin-left: 2.7rem;
+  }
+  .cardevent1{
+    margin-top: 2rem;
+    font-size:20px;
+  }
+    .venuesStarting{
+      width: 100%;
+      overflow: hidden;
+    }
+    .event_Col1.col.container {
+      margin-left: -2.4rem;
+  }
+  .footer form {
+    display: flex;
+    position: relative;
+    left: -20px;
+  }
+    .event_Col1 img {
+      border: 12px solid #fbd07a;
+      border-top-left-radius: 4.375rem;
+      z-index: 1;
+      width: 244px;
+      height: 210px;
+      position: relative;
+      left: 1rem;
+  }
+ 
+
+  h5.cardEight {
+    font-size: 17px;
+    width: 9rem;
+    top: -4rem;
+    position: relative;
+  }
+  .Book_Venue_container.container {
+    margin-top: -19rem;
+  }
+  .Book_Venue_description {
+    display: flex;
+    flex-direction: column;
+    width: 79.188rem;
+    height: 16.875rem;
+    text-align: center;
+    font-size: 17.625px;
+    font-family: "Roboto";
+    font-weight: 400;
+    line-height: 1.875rem;
+    flex-wrap: wrap;
+    display: contents;
+  }
+  .section_main_left {
+    margin-top: -55rem;
+    margin-left: 4rem;
+  }
+  .top_image img {
+    padding: 8px;
+    width: 10rem;
+    height: auto;
+
+  }
+  .horizontal_image img {
+    padding: 10px;
+    width: 10rem;
+    height: auto;
+
+  }
+  .main_horizontal_img img {
+    padding: 10px;
+    width: 20rem;
+    height: auto;
+
+  }
+  .corner_left {
+    position: relative;
+    left: 16.5rem;
+    color: black;
+    bottom: 3.625rem;
+  }
+  .right_section {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    justify-self: center;
+    z-index: -1;
+    background: url(../Images/backgroundFive.png);
+    position: relative;
+    bottom: -9rem;
+    margin-top: 15rem;
+    width: 73%;
+    margin-left: 1rem;
+    /* padding: 3rem; */
+    margin-bottom: 17rem;
+  
+  }
+  .para_section {
+    width: 264px;
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    background-color: #fbd07a;
+    padding: 6.063rem;
+    margin-top: 20rem;
+    height: 604px;
+    margin-right: 0%;
+    border-radius: 10px;
+  }
+  .para_section p {
+    font-family: "Roboto";
+    font-style: normal;
+    font-weight: 400;
+    font-size: 0.87rem;
+    line-height: 1.313rem;
+    text-align: center;
+    color: #000000;
+    width: 14rem;
+  }
+  .whatsappImage {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    align-items: flex-end;
+    margin-top: 6rem;
+    margin-left: 1rem;
+    margin-bottom: -6rem;
+  }
+  .event_main_section {
+    display: flex;
+    margin: 7px;
+    margin-left: 19.5rem;
+    justify-content: center;
+    align-content: center;
+    /* margin: auto; */
+    flex-direction: row;
+    width: auto;
+  }
+  .event_Col2 img {
+    border: 12px solid #270F33;
+    border-bottom-right-radius: 5.375rem;
+    z-index: -1;
+    position: relative;
+    width: 244px;
+    height: 210px;
+    right: 19rem;
+    top: 0rem;
+  }
+  .cardevent1
+  {
+    font-size: 23px;
+  }
+  h5.cardEvent {
+    margin-top: 2rem; 
+    position: relative;
+    top: -3rem;
+    font-size: 15px;
+    width: 177px;
+    left: -20rem;
+  }
+  }
+  .venue_heading {
+   margin-top: 10px;
+  }
+  @media screen and (min-width:576px) and (max-width:767px) {
+    .event_main_section {
+      display: flex;
+      margin: 7px;
+      margin-left: 19.5rem;
+      justify-content: center;
+      align-content: center;
+      /* margin: auto; */
+      flex-direction: row;
+      width: auto;
+    }
+    .event_Col2 img {
+      border: 12px solid #270F33;
+      border-bottom-right-radius: 5.375rem;
+      z-index: -1;
+      position: relative;
+      width: 300px;
+      height: 210px;
+      right: 16rem;
+    }
+    .cardevent1
+    {
+      font-size: 23px;
+    }
+    h5.cardEvent {
+      margin-top: 2rem; 
+      position: relative;
+      top: -3rem;
+      font-size: 15px;
+      width: 177px;
+      left: -16rem;
+    }
+    .venuesStarting{
+      width: 100%;
+      overflow: hidden;
+    }
+    .event_Col1.col.container {
+      margin-left: -2.4rem;
+  }
+    .event_Col1 img {
+      border: 12px solid #fbd07a;
+      border-top-left-radius: 4.375rem;
+      z-index: 1;
+      width: 300px;
+      height: 210px;
+  }
+  h5.cardEight {
+    font-size: 17px;
+    width: 9rem;
+    top: -4rem;
+    position: relative;
+  }
+  .Book_Venue_container.container {
+    margin-top: -19rem;
+  }
+  .Book_Venue_description {
+    display: flex;
+    flex-direction: column;
+    width: 79.188rem;
+    height: 16.875rem;
+    text-align: center;
+    font-size: 17.625px;
+    font-family: "Roboto";
+    font-weight: 400;
+    line-height: 1.875rem;
+    flex-wrap: wrap;
+    display: contents;
+  }
+  .section_main_left {
+    margin-top: -57rem;
+    margin-left: 12rem;
+  }
+  .top_image img {
+    padding: 8px;
+    width: 10rem;
+    height: auto;
+  }
+  .horizontal_image img {
+    padding: 10px;
+    width: 10rem;
+    height: auto;
+
+  }
+  .main_horizontal_img img {
+    padding: 10px;
+    width: 20rem;
+    height: auto;
+
+  }
+  .corner_left {
+    position: relative;
+    left: 16.5rem;
+    color: black;
+    bottom: 3.625rem;
+  }
+  .right_section {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    justify-self: center;
+    z-index: -1;
+    background: url(../Images/backgroundFive.png);
+    position: relative;
+    bottom: -9rem;
+    margin-top: 8rem;
+    width: 73%;
+    margin-left: 1rem;
+    /* padding: 3rem; */
+    margin-bottom: 17rem;
+  
+  }
+  .para_section {
+    width: 231px;
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    background-color: #fbd07a;
+    padding: 6.063rem;
+    margin-top: 20rem;
+    height: 604px;
+    margin-right: 10%;
+    border-radius: 10px;
+  }
+  .para_section p {
+    font-family: "Roboto";
+    font-style: normal;
+    font-weight: 400;
+    font-size: 0.87rem;
+    line-height: 1.313rem;
+    text-align: center;
+    color: #000000;
+    width: 14rem;
+  }
+  .whatsappImage {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    align-items: flex-end;
+    margin-top: 6rem;
+    margin-left: 1rem;
+    margin-bottom: -6rem;
+  }
+  }
+  .venue_heading {
+   margin-top: 10px;
+  }
+  @media screen and (min-width:767px) and (max-width:991px) {
+    .venuesStarting{
+      overflow: hidden;
+    }
+    .event_Col1 img {
+      border: 20px solid #fbd07a;
+      border-top-left-radius: 9.375rem;
+      z-index: 1;
+      width: 25.438rem;
+      height: 23.125rem;
+      margin-left: 4.4rem;
+  }
+  .event_Col2 img {
+    border: 20px solid #003831;
+    border-bottom-right-radius: 169.737px;
+    z-index: -1;
+    position: relative;
+    right: 5.563rem;
+    top: 0.125rem;
+    width: 26.313rem;
+    height: 23.688rem;
+  }
+  .card_heading h5 {
+    font-family: 'Rochester';
+    font-size: 33px;
+    padding: -38px;
+    width: 100%;
+    align-items: center;
+    position: relative;
+    bottom: 80px;
+    left: -132px;
+    top: -54px;
+  }
+    .Book_Venue_description {
+      display: flex;
+      flex-direction: row;
+      width: 44.188rem;
+      height: 16.875rem;
+      text-align: center;
+      font-size: 1.1rem;
+      font-family: "Roboto";
+      font-weight: 400;
+      line-height: 1.875rem;
+      flex-wrap: wrap;
+      margin-bottom: 5rem;
+  }
+  p.paraLetsChat1 {
+    width: 42rem;
+  }
+  p.paraLetsChat {
+    margin-left: -33rem;
+    margin-top: 4rem;
+  }
+  .section_main_left {
+    margin-top: -35rem;
+    margin-left: -1.4rem;
+  }
+  .right_section {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    justify-self: center;
+    z-index: -1;
+    position: relative;
+    bottom: -9rem;
+    width: 90%;
+    padding: 1rem;
+    margin-top: -16rem;
+    margin-bottom: 17rem;
+    margin-left: 33px;
+  }
+  .para_section {
+    width: 45%;
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    background-color: #fbd07a;
+    padding: 0.6rem;
+    margin-right: 2%;
+    border-radius: 10px;
+  }
+  .para_section p {
+    font-size: 9px;
+   
+      font-size: 11px;
+      font-family: "Roboto";
+      line-height: 17px;
+    
+  }
+  .top_image img {
+    padding: 8px;
+    width: 10.5rem;
+    height: auto;
+  }
+  .horizontal_image img {
+    padding: 10px;
+  width: 10.5rem;
+  height: auto;
+
+    
+  }
+  .main_horizontal_img img {
+    padding: 10px;
+    width: 21.8rem;
+  width: 20.9rem;
+  height: auto;
+    
+  }
+  .corner_left {
+    position: relative;
+    left: 17rem;
+    color: black;
+    bottom: 3.625rem;
+  }
+  .event_main_section {
+    display: flex;
+    margin: auto;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+    margin: 0 auto;
+}
+  
+  }
+  @media screen and (min-width:991px) and (max-width:1200px) {
+    .venuesStarting{
+      overflow: hidden;
+    }
+    .event_main_section {
+      display: flex;
+      margin: auto;
+      display: flex;
+      flex-direction: row;
+      justify-content: center;
+      align-items: center;
+      align-content: center;
+      margin: 0 auto;
+  }
+    .event_rowStart.event_main_section.row.row-cols-1.row-cols-md-2.g-4.container {
+      margin-left: 5rem;
+  }
+    .event_Col1 img {
+      border: 20px solid #fbd07a;
+      border-top-left-radius: 9.375rem;
+      z-index: 1;
+      width: 30.438rem;
+      height: 23.125rem;
+  }
+  .event_Col2 img {
+    border: 20px solid #003831;
+    border-bottom-right-radius: 169.737px;
+    z-index: -1;
+    position: relative;
+    right: 5.563rem;
+    top: 0.125rem;
+    width: 30.313rem;
+    height: 23.688rem;
+  }
+  .card_heading h5 {
+    font-family: 'Rochester';
+      font-size: 35px;
+      padding: -38px;
+      width: 23rem;
+      align-items: center;
+      position: relative;
+      bottom: 92px;
+      margin-left: -38px;
+      top: -67px;
+  }
+    .Book_Venue_description {
+      display: flex;
+      flex-direction: row;
+      width: 60.188rem;
+      height: 16.875rem;
+      text-align: center;
+      font-size: 1.3rem;
+      font-family: "Roboto";
+      font-weight: 400;
+      line-height: 1.875rem;
+      flex-wrap: wrap;
+      margin-bottom: 5rem;
+  }
+  p.paraLetsChat1 {
+    width: 45rem;
+    margin-left: 5rem;
+  }
+  p.paraLetsChat {
+    margin-left: -33rem;
+    margin-top: 4rem;
+  }
+  .section_main_left {
+    margin-top: -16rem;
+    margin-left: -1rem;
+  }
+  .right_section {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    justify-self: center;
+    z-index: -1;
+    position: relative;
+    bottom: -9rem;
+    width: 100%;
+    padding: 3rem;
+    margin-top: -12rem;
+   
+      display: flex;
+      justify-content: flex-end;
+      align-items: center;
+      justify-self: center;
+      z-index: -1;
+      position: relative;
+      bottom: -9rem;
+      width: 90%;
+      padding: 1rem;
+      margin-top: -16rem;
+      margin-bottom: 17rem;
+      margin-left: 33px;
+  }
+  .para_section {
+    width: 39%;
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    background-color: #fbd07a;
+    padding: 0.6rem;
+    margin-right: 10%;
+    border-radius: 10px;
+  }
+  .para_section p {
+    font-size: 11.5px;
+  }
+  .section_main_container{
+    position: absolute;
+    top: 109rem;
+  }
+  .top_image img {
+    padding: 8px;
+    width: 13rem;
+    width: 11.188rem;
+    height: auto;
+  }
+  .horizontal_image img {
+    padding: 10px;
+    width: 13rem;
+    width: 11.188rem;
+    height: auto;
+  }
+  .main_horizontal_img img {
+    padding: 10px;
+    width: 22.6rem;
+    height:auto;
+  }
+  .corner_left {
+    position: relative;
+    left: 19rem;
+    color: black;
+    bottom: 3.625rem;
+  }
+  }
+  @media screen and (min-width:1200px) and (max-width:1399px) {
+    .venuesStarting{
+      overflow: hidden;
+    }
+    .event_rowStart.event_main_section.row.row-cols-1.row-cols-md-2.g-4.container {
+      margin-left: 5rem;
+  }
+  .event_Col1 img {
+    border: 20px solid #fbd07a;
+    border-top-left-radius: 9.375rem;
+    z-index: 1;
+    width: 35.438rem;
+    height: 23.125rem;
+  }
+  .event_Col2 img {
+    border: 20px solid rgba(0, 56, 49, 1);
+    border-bottom-right-radius: 169.737px;
+    z-index: -1;
+    position: relative;
+    right: 5.563rem;
+    top: 0.125rem;
+    width: 35.313rem;
+    height: 23.688rem;
+  }
+  .card_heading h5 {
+    font-family: 'Rochester'; 
+      padding: -38px;
+      
+      position: relative;
+      bottom: 97px;
+      margin-left: -59px;
+      position: relative;
+      font-size: 42px;
+      margin-bottom: 44px;
+      top: -44px;
+  }
+  .Book_Venue_description {
+    display: flex;
+    flex-direction: row;
+    width: 68.188rem;
+    height: 16.875rem;
+    text-align: center;
+    font-size: 1.5rem;
+    font-family: "Roboto";
+    font-weight: 400;
+    line-height: 1.875rem;
+    flex-wrap: wrap;
+    margin-bottom: 5rem;
+  }
+  p.paraLetsChat1 {
+    width: 57rem;
+    margin-left: 5rem;
+  }
+  p.paraLetsChat {
+    margin-left: -42rem;
+    margin-top: 4rem;
+  }
+  .section_main_left {
+    margin-top: -8rem;
+    margin-left: -3rem;
+  }
+  .right_section {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    justify-self: center;
+    z-index: -1;
+    position: relative;
+    bottom: -9rem;
+    width: 100%;
+    padding: 3rem;
+    margin-top: -3rem;
+  }
+  .para_section {
+    width: 48%;
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    background-color: #fbd07a;
+    padding: 2.6rem;
+    margin-right: -2%;
+    border-radius: 10px;
+  }
+  .para_section p {
+    font-size: 14.5px;
+  }
+  .top_image img {
+    padding: 8px;
+    width: 16rem;
+  }
+  .horizontal_image img {
+    padding: 10px;
+    width: 16rem;
+  }
+  .main_horizontal_img img {
+    padding: 10px;
+    width: 32rem;
+  }
+  .corner_left {
+    position: relative;
+    left: 28rem;
+    color: black;
+    bottom: 3.625rem;
+  }
+  
+  }
+  
+  @media screen and (min-width:1900px) and (max-width:5000px) {
+    .sectionParaAndImages {
+      display: flex;
+      justify-content: center;
+  }
+  .right_section{
+    width: 69%;
+  }
+  .section_main_container {
+    display: flex;
+    z-index: 1;
+    margin-left: -24%;
+    position: absolute;
+    top: 119rem;
+    justify-content: center;
+  }
+  }
+  @media screen and (min-width:2500px) and (max-width:5000px) {
+    .right_section{
+      width: 57%;
+    }
+  @media screen and (min-width:1200px) and (max-width:1300px){
+    .venuesStarting{
+      overflow: hidden;
+    }
+    .event_rowStart.event_main_section.row.row-cols-1.row-cols-md-2.g-4.container {
+      margin-left: 5rem;
+  }
+    .event_Col1 img {
+      border: 20px solid #fbd07a;
+      border-top-left-radius: 9.375rem;
+      z-index: 1;
+      width: 30.438rem;
+      height: 23.125rem;
+  }
+  .event_Col2 img {
+    border: 20px solid #003831;
+    border-bottom-right-radius: 169.737px;
+    z-index: -1;
+    position: relative;
+    right: 5.563rem;
+    top: 0.125rem;
+    width: 30.313rem;
+    height: 23.688rem;
+  }
+  .card_heading h5 {
+    font-family: 'Rochester';
+    font-size: 35px;
+    padding: -38px;
+    width: 16rem;
+    align-items: center;
+    /* text-align: center; */
+    position: relative;
+    bottom: 81px;
+  }
+    .Book_Venue_description {
+      display: flex;
+      flex-direction: row;
+      width: 60.188rem;
+      height: 16.875rem;
+      text-align: center;
+      font-size: 1.3rem;
+      font-family: "Roboto";
+      font-weight: 400;
+      line-height: 1.875rem;
+      flex-wrap: wrap;
+      margin-bottom: 5rem;
+  }
+  p.paraLetsChat1 {
+    width: 45rem;
+    margin-left: 5rem;
+  }
+  p.paraLetsChat {
+    margin-left: -33rem;
+    margin-top: 4rem;
+  }
+  .section_main_left {
+    margin-top: -5rem;
+    margin-left: 1rem;
+  }
+  .right_section {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    justify-self: center;
+    z-index: -1;
+    position: relative;
+    bottom: -9rem;
+    width: 100%;
+    padding: 3rem;
+    margin-top: -12rem;
+   
+      display: flex;
+      justify-content: flex-end;
+      align-items: center;
+      justify-self: center;
+      z-index: -1;
+      position: relative;
+      bottom: -9rem;
+      width: 90%;
+      padding: 1rem;
+      margin-top: -16rem;
+      margin-bottom: 17rem;
+      margin-left: 33px;
+  }
+  .para_section {
+    width: 36%;
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    background-color: #fbd07a;
+    padding: 0.6rem;
+    margin-right: 10%;
+    border-radius: 10px;
+  }
+  .para_section p {
+    font-size: 11.5px;
+  }
+  .section_main_container{
+    position: absolute;
+    top: 109rem;
+  }
+  .top_image img {
+    padding: 8px;
+    width: 13rem;
+    width: 11.188rem;
+  }
+  .horizontal_image img {
+    padding: 10px;
+    width: 13rem;
+    width: 11.188rem;
+  }
+  .main_horizontal_img img {
+    padding: 10px;
+    width: 22.6rem;
+  }
+  .corner_left {
+    position: relative;
+    left: 19rem;
+    color: black;
+    bottom: 3.625rem;
+  }
+  }
+  @media screen and (min-width:1300px) and (max-width:1400px){
+    .venuesStarting{
+      overflow: hidden;
+    }
+    .event_rowStart.event_main_section.row.row-cols-1.row-cols-md-2.g-4.container {
+      margin-left: 5rem;
+  }
+    .event_Col1 img {
+      border: 20px solid #fbd07a;
+      border-top-left-radius: 9.375rem;
+      z-index: 1;
+      width: 30.438rem;
+      height: 23.125rem;
+  }
+  .event_Col2 img {
+    border: 20px solid #003831;
+    border-bottom-right-radius: 169.737px;
+    z-index: -1;
+    position: relative;
+    right: 5.563rem;
+    top: 0.125rem;
+    width: 30.313rem;
+    height: 23.688rem;
+  }
+  .card_heading h5 {
+    font-family: 'Rochester';
+    font-size: 35px;
+    padding: -38px;
+    width: 16rem;
+    align-items: center;
+    /* text-align: center; */
+    position: relative;
+    bottom: 81px;
+  }
+    .Book_Venue_description {
+      display: flex;
+      flex-direction: row;
+      width: 60.188rem;
+      height: 16.875rem;
+      text-align: center;
+      font-size: 1.3rem;
+      font-family: "Roboto";
+      font-weight: 400;
+      line-height: 1.875rem;
+      flex-wrap: wrap;
+      margin-bottom: 5rem;
+  }
+  p.paraLetsChat1 {
+    width: 45rem;
+    margin-left: 5rem;
+  }
+  p.paraLetsChat {
+    margin-left: -33rem;
+    margin-top: 4rem;
+  }
+  .section_main_left {
+    margin-top: -2rem;
+    margin-left: 1rem;
+  }
+  .right_section {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    justify-self: center;
+    z-index: -1;
+    position: relative;
+    bottom: -9rem;
+    width: 83%;
+    padding: 1rem;
+    margin-top: -16rem;
+    margin-bottom: 17rem;
+    margin-left: 88px;
+  }
+  .para_section {
+    width: 33%;
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    background-color: #fbd07a;
+    padding: 0.6rem;
+    margin-right: 6%;
+    border-radius: 10px;
+  }
+  .para_section p {
+    font-size: 11.5px;
+  }
+  .section_main_container{
+    position: absolute;
+    top: 109rem;
+  }
+  .top_image img {
+    padding: 8px;
+    width: 13rem;
+    width: 11.188rem;
+  }
+  .horizontal_image img {
+    padding: 10px;
+    width: 13rem;
+    width: 11.188rem;
+  }
+  .main_horizontal_img img {
+    padding: 10px;
+    width: 22.6rem;
+  }
+  .corner_left {
+    position: relative;
+    left: 19rem;
+    color: black;
+    bottom: 3.625rem;
+  }
+  }
+  @media screen and (min-width:1400px) and (max-width:1500px){
+    .venuesStarting{
+      overflow: hidden;
+    }
+    .event_rowStart.event_main_section.row.row-cols-1.row-cols-md-2.g-4.container {
+      margin-left: 5rem;
+  }
+    .event_Col1 img {
+      border: 20px solid #fbd07a;
+      border-top-left-radius: 9.375rem;
+      z-index: 1;
+      width: 30.438rem;
+      height: 23.125rem;
+  }
+  .event_Col2 img {
+    border: 20px solid #003831;
+    border-bottom-right-radius: 169.737px;
+    z-index: -1;
+    position: relative;
+    right: 5.563rem;
+    top: 0.125rem;
+    width: 30.313rem;
+    height: 23.688rem;
+  }
+  .card_heading h5 {
+    font-family: 'Rochester';
+    font-size: 35px;
+    padding: -38px;
+    width: 16rem;
+    align-items: center;
+    /* text-align: center; */
+    position: relative;
+    bottom: 81px;
+  }
+    .Book_Venue_description {
+      display: flex;
+      flex-direction: row;
+      width: 60.188rem;
+      height: 16.875rem;
+      text-align: center;
+      font-size: 1.3rem;
+      font-family: "Roboto";
+      font-weight: 400;
+      line-height: 1.875rem;
+      flex-wrap: wrap;
+      margin-bottom: 5rem;
+  }
+  p.paraLetsChat1 {
+    width: 45rem;
+    margin-left: 5rem;
+  }
+  p.paraLetsChat {
+    margin-left: -33rem;
+    margin-top: 4rem;
+  }
+  .section_main_left {
+    margin-top: 6.5rem;
+    margin-left: 1rem;
+  }
+  .right_section {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    justify-self: center;
+    z-index: -1;
+    position: relative;
+    bottom: -9rem;
+    width: 83%;
+    padding: 1rem;
+    margin-top: -16rem;
+    margin-bottom: 17rem;
+    margin-left: 102px;
+  }
+  .para_section {
+    width: 33%;
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    background-color: #fbd07a;
+    padding: 0.6rem;
+    margin-right: 6%;
+    border-radius: 10px;
+  }
+  .para_section p {
+    font-size: 11.5px;
+  }
+  .section_main_container{
+    position: absolute;
+    top: 109rem;
+  }
+  .top_image img {
+    padding: 8px;
+    width: 13rem;
+    width: 11.188rem;
+  }
+  .horizontal_image img {
+    padding: 10px;
+    width: 13rem;
+    width: 11.188rem;
+  }
+  .main_horizontal_img img {
+    padding: 10px;
+    width: 22.6rem;
+  }
+  .corner_left {
+    position: relative;
+    left: 19rem;
+    color: black;
+    bottom: 3.625rem;
+  }
+  }}
+  @media screen and (min-width:320px) and (max-width:360px) {
+    .rigthSectionDesktopView{
+      display: none;
+    }
+  .section_main_container{
+    z-index: 0;
+  }
+  .rigthSectionMobileView{
+    height: 42rem;
+  }
+  .paraSectionMobileView {
+    width: 225px;
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    background-color: #fbd07a;
+    padding: 6.063rem;
+    margin-top: 20rem;
+    height: 322px;
+    margin-right: -20%;
+    border-radius: 10px;
+    position: relative;
+    top: -8px;
+  }
+  p.paraSectionP {
+    font-size: 12px;
+    padding: 9px;
+  }
+  }
+  @media screen and (min-width:360px) and (max-width:372px) {
+    .rigthSectionDesktopView{
+      display: none;
+    }
+  .section_main_container{
+    z-index: 0;
+  }
+  .rigthSectionMobileView{
+    height: 42rem;
+  }
+  .paraSectionMobileView {
+    width: 248px;
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    background-color: #fbd07a;
+    padding: 6.063rem;
+    margin-top: 20rem;
+    height: 322px;
+    margin-right: -17%;
+    border-radius: 10px;
+    position: relative;
+    top: -8px;
+  }
+  }
+  @media screen and (min-width:372px) and (max-width:576px) {
+    .rigthSectionDesktopView{
+      display: none;
+    }
+  .section_main_container{
+    z-index: 0;
+  }
+  .rigthSectionMobileView{
+    height: 42rem;
+  }
+  .paraSectionMobileView{
+    width: 248px;
+      align-items: center;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      text-align: center;
+      background-color: #fbd07a;
+      padding: 6.063rem;
+      margin-top: 20rem;
+      height: 322px;
+      margin-right: -7%;
+      border-radius: 10px;
+      position: relative;
+      top: -15px;
+  }
+  }
+  @media screen and (min-width:576px) {
+    .rigthSectionMobileView{
+      display: none;
+    }
+    .section_main_container{
+      z-index: 0;
+    }
+  }
+  @media screen and (min-width:439px) and (max-width:480px) {
+    .section_main_left {
+      margin-top: -70.7rem;
+      margin-left: 2rem;
+  }
+  }
+  .venuesStarting{
+    overflow: hidden;
+  }
+  .event_main_section{
+    display: flex;
+    margin: auto;
+    margin: 0 auto;
+    align-items: center;
+    justify-content: center;
+    flex-direction: row;
+    margin-left: 1rem;
+  }
+  @media screen and (min-width:1400px) and (max-width:1500px){
+    .section_main_left{
+      margin-top: 1rem;
+    }
+  }
