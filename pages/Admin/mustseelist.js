@@ -3,13 +3,14 @@ import { HiPencil } from "react-icons/hi";
 import Button from "react-bootstrap/Button";
 import Form from "react-bootstrap/Form";
 import Modal from "react-bootstrap/Modal";
-import dashboardimage from "./AdminImages/dashboardimage.png";
 import { AiOutlinePlus } from "react-icons/ai";
-// import "./ReportsAboutEvent.css";
 import Link from "next/link";
 import { useState } from "react";
 import { useEffect } from "react";
 import Dashboard from "./Dashboard";
+import Image from "next/image";
+import dashboardimage from "../Admin/AdminImages/dashboardimage.png";
+import styles from "../Admin/ReportsAboutEvent.module.css";
 
 export default function ReportsMustSee() {
   const [user, setUser] = useState([]);
@@ -46,14 +47,20 @@ export default function ReportsMustSee() {
     <>
       <div className="exceedContainer">
         <div className="ReportContainer ">
-          <div className="row container">
+          <div className="row container" style={{margin:"0px",padding:"0px"}}>
             <Dashboard />
-            <div className="ReportEventRightSide col col-sm-6 ">
-              <div className="dashboardHeadings">
-                <span className="DashboardBox" style={{ display: "flex" }}>
-                  <img
+            <div className="ReportEventRightSide col col-sm-6 " style={{marginLeft:"1.5rem"}} >
+            <div
+                className={styles.dashboardHeadings}
+                style={{ background: "#270F33" }}
+              >
+                <span
+                  className={styles.DashboardBox}
+                  style={{ display: "flex" }}
+                >
+                  <Image
                     src={dashboardimage}
-                    style={{ width: "20px", height: "22px", marginTop: "4px" }}
+                    style={{ width: "20px", height: "22px", marginTop: "8px" }}
                     alt=""
                   />
                   <h5
@@ -62,43 +69,49 @@ export default function ReportsMustSee() {
                       fontWeight: "500",
                       marginLeft: "10px",
                       color: "white",
+                      marginTop: "5.6px",
                     }}
                   >
                     Dashboard
                   </h5>
                 </span>
               </div>
-              <div className="ReportsHeadings">
+              <div className={styles.ReportsHeadings}>
                 <h5>Must See Events</h5>
-                <div className="SearchAdd row">
-                  <div className="ReportSearch col-6">
+                <div className={styles.SearchAdd} style={{ display: "flex" }}>
+                  <div className={styles.ReportSearch}>
                     <input
                       type="search"
+                      style={{
+                        width: "52.5rem",
+                        height: "4rem",
+                        borderRadius: "10px",
+                        border: "solid #dadde0",
+                      }}
                       name=""
                       id=""
                       placeholder="&#128269; Search"
                     />
                   </div>
-                  <div className="AddLeadForm col-6">
-                    <Link href="/must-see-event">
+                  <div className={styles.AddLeadForm}>
+                    <Link href="/add-banner">
                       {" "}
-                      <button>
-                        Add Must See Event{" "}
-                        <AiOutlinePlus className="leadIcon" />{" "}
+                      <button style={{ border: "none" }}>
+                        Add Must See Event <AiOutlinePlus className="leadIcon" />{" "}
                       </button>
                     </Link>
                   </div>
                 </div>
-                <div className="reportTable">
+                <div className={styles.reportTable}>
                   <table>
-                    <tr className="tableheading">
+                    <tr className={styles.tableheading}>
                       <th colSpan="1">Event Name</th>
                       <th colSpan="1">Edit</th>
                       <th colSpan="1">Delete</th>
                     </tr>
                     {user && user.length
                       ? user.map((userss, i) => (
-                          <tr className="tableData" key={i}>
+                          <tr className={styles.tableData} key={i}>
                             <td>{userss.eventData.eventName}</td>
                             <td>
                               <Link href={`/mustSee/${userss._id}`}>

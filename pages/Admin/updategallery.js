@@ -1,10 +1,12 @@
 import React, { useState, useEffect, Children } from "react";
-import dashboardimage from "./AdminImages/dashboardimage.png";
+import dashboardimage from "../Admin/AdminImages/dashboardimage.png";
 import Dashboard from "./Dashboard";
 // import { useNavigate, useParams } from "react-router-dom";
 import axios from "axios";
 import { ThreeDots } from "react-loader-spinner";
-import Lines from "../Admin/AdminImages/Lines.png"
+import Lines from "../Admin/AdminImages/Lines.png"  
+import styles from "../Admin/AddBanner.module.css"
+import Image from "next/image";
 
 
 export default function PutGallery() {
@@ -291,43 +293,37 @@ console.log(data.category)
   return (
     <>
     <div className="exceedContainer">
-      <div className="EventContainer ">
-        <div className="row container">
+      <div className={styles.EventContainer} >
+        <div className="row container" style={{padding:"0px",margin:"0px"}}>
           <Dashboard />
-          <div className="addBannerRightSide col col-sm-6 ">
+          <div className="addBannerRightSide col col-sm-6 " style={{marginLeft:"1.5rem"}}>
             <form onSubmit={handleSubmit}>
-              {/* <div className="dashboardHeadings">
-                <span className="DashboardBox">
-                  <img src={dashboardimage} alt="" />
-                  <img className="dashboardwrite" src={Dashboardwrite} alt="" />
-                </span>
-              </div> */}
-               <div className="dashboardHeadings">
-                <span className="DashboardBox" style={{'display':'flex'}}>
-                  <img src={dashboardimage} style={{'width':'20px','height':'22px','marginTop':"4px"}} alt="" />
-                  {/* <img className="dashboardwrite" src={Dashboardwrite} alt="" /> */}
-                  <h5 style={{"fontSize":"25px",'fontWeight':'500','marginLeft':"10px",'color':"white"}}>Dashboard</h5>
+            
+            <div className={styles.dashboardHeadings} style={{background:"#270F33"}}>
+                <span className={styles.DashboardBox}  style={{'display':'flex'}}>
+                  <Image src={dashboardimage} style={{'width':'20px','height':'22px','marginTop':"8px"}} alt="" />
+                  <h5 style={{"fontSize":"25px",'fontWeight':'500','marginLeft':"10px",'color':"white",'marginTop':"5.6px"}}>Dashboard</h5>
                 </span>
               </div>
-              <div className="h2">
+              <div className={styles.h2}>
                 <h5> Edit Gallery Image</h5>
               </div>
-              <div className="uploadingBanner">
-                <div className="dragingImageBanner">
-                  <div className="dragingparaBanner">
+              <div className={styles.uploadingBanner}>
+                <div className={styles.dragingImageBanner}>
+                  <div className={styles.dragingparaBanner}>
                     <div className="row row-cols-md-2 g-4">
                     <div className=" col">
-                        <div className="uploadingBanner2">
+                        <div className={styles.uploadingBanner2}>
                           <h5>Upload Small Image ( Web Version )</h5>
                           <p>
                           Supports : PNG, JPG (Max Size : 200 KB)
                           </p>
                         </div>
-                        <div className="LinesImagesBanner">
+                        <div className={styles.LinesImagesBanner}>
                           <img src={Lines} alt="" />
                         </div>
 
-                        <div className="dragingpara2">
+                        <div className={styles.dragingpara2}>
                         {uploadMobileImage ? (
                             uploadMobileImage && (
                               <img
@@ -373,18 +369,18 @@ console.log(data.category)
                         </div>
                       </div>
                       <div className="col">
-                        <div className="uploadingBanner2">
+                        <div className={styles.uploadingBanner2}>
                           <h5>Upload Big Image ( Web Version )</h5>
                           <p>
                           Supports : PNG, JPG (Max Size : 200 KB)
                           </p>
                         </div>
 
-                        <div className="LinesImagesBanner">
+                        <div className={styles.LinesImagesBanner}>
                           <img src={Lines} alt="" />
                         </div>
 
-                        <div className="dragingpara2">
+                        <div className={styles.dragingpara2}>
                         {uploadMainImage ? (
                             uploadMainImage && (
                               <img
@@ -429,17 +425,17 @@ console.log(data.category)
                         </div>
                       </div>
 <div style={{ marginLeft: "0rem" }} className=" col">
-                        <div className="uploadingBanner2">
+                        <div className={styles.uploadingBanner2}>
                           <h5>Upload Small Image ( Mobile Version )</h5>
                           <p>
                           Supports : PNG, JPG (Max Size : 200 KB)
                           </p>
                         </div>
-                        <div className="LinesImagesBanner">
+                        <div className={styles.LinesImagesBanner}>
                           <img style={{"width":'12rem',"height":"15rem"}} src={Lines} alt="" />
                         </div>
 
-                        <div className="dragingpara2">
+                        <div className={styles.dragingpara2}>
                           {smallMobileImage ? (
                             smallMobileImage && (
                               <img
@@ -486,18 +482,18 @@ console.log(data.category)
                       
                       </div>
                       <div style={{ marginLeft: "-4rem" }} className=" col">
-                        <div className="uploadingBanner2">
+                        <div className={styles.uploadingBanner2}>
                         <h5>Upload Small Image ( Mobile Version )</h5>
                           <p>
 
                           Supports : PNG, JPG (Max Size : 200 KB)
                           </p>
                         </div>
-                        <div className="LinesImagesBanner">
+                        <div className={styles.LinesImagesBanner}>
                           <img src={Lines} alt="" />
                         </div>
 
-                        <div className="dragingpara2">
+                        <div className={styles.dragingpara2}>
                           {bigMobileImage ? (
                             bigMobileImage && (
                               <img
@@ -564,7 +560,7 @@ console.log(data.category)
                 </select>
                 {/* //category type// */}
 
-                <div className="submitButton" >
+                <div className="submitButton" style={{marginTop:"7rem"}} >
                 {isButtonDisabled === false ? (
                       <button
                         className="button btn-danger"

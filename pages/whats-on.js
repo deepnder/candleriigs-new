@@ -1,5 +1,4 @@
 import Header from './Header';
-// import Navbar from "./Navbar";
 import { useState, useEffect } from "react";
 import { AiFillCalendar } from "react-icons/ai";
 import { AiFillClockCircle } from "react-icons/ai";
@@ -10,23 +9,18 @@ import { ImTicket } from "react-icons/im";
 import We_Were_Here from "../Images/We_Were_Here.png";
 import header_top_img from "../Images/header_top_img.png";
 import Image from 'next/image';
-// import Footer from './Footer';
 import dynamic from "next/dynamic";
 import React, { Suspense } from "react";
 import dayjs from 'dayjs';
 import Link from 'next/link';
 
-export default function whatsOn({posts}) {
-    const [item, setItem] = useState([]);
+export default function whatsOn(props) {
+    const [item, setItem] = useState(props.posts.eventData);
      const [data, setData] = useState([]);
      const [search,setSearch] = useState("");
-     useEffect(() => {
-      setItem(posts.eventData)
-     }, []);
  
     const allevents = () => {
-       setData(posts.eventData)
-
+       setData(props.posts.eventData)
      };
      const Navbar = dynamic(() => import("./NavBar"), {
       ssr: false
@@ -262,13 +256,13 @@ export default function whatsOn({posts}) {
  </>
   )
 }
-export async function  getStaticProps() {
-const res = await fetch("https://candleriggs-staging-73rkv.ondigitalocean.app/api/getActiveEvents")
-const posts = await res.json();
-console.log(posts)
-return {
-  props:{
-    posts
-  }
-}
-}
+// export async function  getStaticProps() {
+// const res = await fetch("https://candleriggs-staging-73rkv.ondigitalocean.app/api/getActiveEvents")
+// const posts = await res.json();
+// console.log(posts)
+// return {
+//   props:{
+//     posts
+//   }
+// }
+// }

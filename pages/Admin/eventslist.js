@@ -5,16 +5,17 @@ import Form from "react-bootstrap/Form";
 import Modal from "react-bootstrap/Modal";
 import { MdDelete } from "react-icons/md";
 import { HiPencil } from "react-icons/hi";
-import dashboardimage from "./AdminImages/dashboardimage.png";
 import { AiOutlinePlus } from "react-icons/ai";
-// import "./ReportsAboutEvent.css";
 import Link from "next/link";
-// import "./reports.css";
 import { useState, useEffect } from "react";
 import Dashboard from "./Dashboard";
 import { MdEdit } from "react-icons/md";
 import { BiDuplicate } from "react-icons/bi";
 import dayjs from "dayjs";
+import Image from "next/image";
+import dashboardimage from "./AdminImages/dashboardimage.png";
+import styling from "../Admin/ReportsAboutEvent.module.css";
+// import styles from "../Admin/AddBanner.module.css";
 
 export default function ReportsAboutEvent() {
   const [togglebtn, setToggleBtn] = useState(false);
@@ -29,10 +30,9 @@ export default function ReportsAboutEvent() {
     backgroundColor: {
       color: "black",
     },
-    displayEvent:{
-      display:"none"
+    displayEvent: {
+      display: "none",
     },
-   
   };
   const handleShow = (_id) => {
     setShow(true);
@@ -56,23 +56,23 @@ export default function ReportsAboutEvent() {
 
   const pastDate = dayjs(yesterday).format();
   const goneDate = new Date(pastDate);
-const showOldEvent =()=>{
-  if(togglebtn==false){
-
-    setToggleBtn(true)
-  }
-  
-  else{
-    setToggleBtn(false)
-  }
-}
-const duplicateEvent= async (_id)=>{
-  const response= await fetch( process.env.REACT_APP_API_URL + `/duplicate/${_id}`,{
-    method:"POST"
-  })
-  const data= await response.json();
-  fetchData();
-}
+  const showOldEvent = () => {
+    if (togglebtn == false) {
+      setToggleBtn(true);
+    } else {
+      setToggleBtn(false);
+    }
+  };
+  const duplicateEvent = async (_id) => {
+    const response = await fetch(
+      process.env.REACT_APP_API_URL + `/duplicate/${_id}`,
+      {
+        method: "POST",
+      }
+    );
+    const data = await response.json();
+    fetchData();
+  };
 
   function deleteEvent(_id) {
     fetch(process.env.REACT_APP_API_URL + `/deleteEvent/${id}`, {
@@ -90,7 +90,10 @@ const duplicateEvent= async (_id)=>{
     <>
       <div className="exceedContainer">
         <div className="ReportContainer ">
-          <div className="row container">
+          <div
+            className="row container"
+            style={{ margin: "0px", padding: "0px" }}
+          >
             <Dashboard />
             <div className="modal" tabIndex="-1">
               <div className="modal-dialog">
@@ -122,78 +125,87 @@ const duplicateEvent= async (_id)=>{
                 </div>
               </div>
             </div>
-            <div className="ReportEventRightSide col col-sm-6 ">
-              <div className="dashboardHeadings">
-                <span className="DashboardBox" style={{ display: "flex" }}>
-                  <img
+            <div
+              className="ReportEventRightSide col col-sm-6 "
+              style={{ marginLeft: "1.5rem" }}
+            >
+              <div
+                className={styling.dashboardHeadings}
+                style={{ background: "#270F33" }}
+              >
+                <span
+                  className={styling.DashboardBox}
+                  style={{ display: "flex" }}
+                >
+                  <Image
                     src={dashboardimage}
-                    style={{ width: "20px", height: "22px", marginTop: "4px" }}
+                    style={{ width: "20px", height: "22px", marginTop: "8px" }}
                     alt=""
                   />
-
                   <h5
                     style={{
                       fontSize: "25px",
                       fontWeight: "500",
                       marginLeft: "10px",
                       color: "white",
+                      marginTop: "5.6px",
                     }}
                   >
                     Dashboard
                   </h5>
                 </span>
               </div>
-              <div className="ReportsHeadings">
+              <div className={styling.ReportsHeadings}>
                 <h5>Events</h5>
-                <div className="SearchAdd row">
-                  <div className="ReportSearch col-6">
+                <div className={styling.SearchAdd} style={{ display: "flex" }}>
+                  <div className={styling.ReportSearch}>
                     <input
                       type="search"
+                      style={{
+                        width: "52.5rem",
+                        height: "4rem",
+                        borderRadius: "10px",
+                        border: "solid #dadde0",
+                      }}
                       name=""
                       id=""
                       placeholder="&#128269; Search"
                     />
                   </div>
-                  <div className="AddLeadForm col-6">
-                    <Link href="/manager">
-                      <button>
+                  <div className={styling.AddLeadForm}>
+                    <Link href="/add-banner">
+                      {" "}
+                      <button style={{ border: "none" }}>
                         Add Event <AiOutlinePlus className="leadIcon" />{" "}
-                      </button>{" "}
+                      </button>
                     </Link>
-                    <div
-                      className="form-check form-switch"
-                      style={{
-                        position: "relative",
-                        left: "550px",
-                        top: "20px",
-                      }}
-                    >
-                      <label
-                        className="form-check-label"
-                        for="flexSwitchCheckDefault"
-                        style={{ color: "black" }}
-                      >
-                        Show Past Events
-                      </label>
-                      
-
-
-
-                      <input
-                        className="form-check-input"
-                        onChange={showOldEvent}
-                        type="checkbox"
-                        role="switch"
-                        id="flexSwitchCheckDefault"
-                       
-                      />
-                     
-                    </div>
                   </div>
                 </div>
-                <div className="reportTable">
+                <div
+                  className="form-check form-switch" style={{    marginLeft: "54.4rem",
+                    width: "11rem",
+                    marginTop: "2rem"}}
+                >
+                  <label
+                    className="form-check-label"
+                    for="flexSwitchCheckDefault"
+                    style={{position:"relative",right:"3rem"}}
+                  >
+                    Show Past Events
+                  </label>
+                      <input
+                    className="form-check-input"
+                    onChange={showOldEvent}
+                    type="checkbox"
+                    role="switch" style={{position:"absolute"}}
+                    id="flexSwitchCheckDefault"
+                  />
+
+              
+                </div>
+                <div className={styling.reportTable}>
                   <table>
-                    <tr className="tableheading">
+                    <tr className={styling.tableheading}>
                       <th colSpan="1">Event Name</th>
                       <th colSpan="1">Price</th>
                       <th colSpan="1">Listing Start Date</th>
@@ -205,75 +217,91 @@ const duplicateEvent= async (_id)=>{
                     {datas && datas.length
                       ? datas.map((item, i) => (
                           <tr
-                            className="tabledata tabledata2"
-                            
+                            className={styling.tabledata}
                             style={
-                              togglebtn===false? goneDate > new Date(item.date)
-                                  ? styles. displayEvent
+                              togglebtn === false
+                                ? goneDate > new Date(item.date)
+                                  ? styles.displayEvent
                                   : styles.backgroundColor
-                              : styles.backgroundColor}
+                                : styles.backgroundColor
+                            }
                             key={i}
                           >
                             <td
-                             style={
-                              togglebtn===true && goneDate > new Date(item.date)
+                              style={
+                                togglebtn === true &&
+                                goneDate > new Date(item.date)
                                   ? styles.background
                                   : styles.backgroundColor
-                             }
-                            >{item.eventName}</td>
-                            <td
-                           style={
-                            togglebtn===true && goneDate > new Date(item.date)
-                                ? styles.background
-                                : styles.backgroundColor
-                           }
-                            >£{item.price}</td>
-                            <td
-                            style={
-                              togglebtn===true && goneDate > new Date(item.date)
-                                  ? styles.background
-                                  : styles.backgroundColor
-                             }
+                              }
                             >
-                              { item.eventStartDate 
-                               === null ? null : moment(item.eventStartDate).format(
-                                "MMM Do YYYY"
-                              ) }
+                              {item.eventName}
                             </td>
                             <td
-                           style={
-                            togglebtn===true && goneDate > new Date(item.date)
-                                ? styles.background
-                                : styles.backgroundColor
-                           }
-                            >{dayjs(item.date).format("MMM D YYYY")}</td>
-                            <td
-                          
+                              style={
+                                togglebtn === true &&
+                                goneDate > new Date(item.date)
+                                  ? styles.background
+                                  : styles.backgroundColor
+                              }
                             >
+                              £{item.price}
+                            </td>
+                            <td
+                              style={
+                                togglebtn === true &&
+                                goneDate > new Date(item.date)
+                                  ? styles.background
+                                  : styles.backgroundColor
+                              }
+                            >
+                              {item.eventStartDate === null
+                                ? null
+                                : moment(item.eventStartDate).format(
+                                    "MMM Do YYYY"
+                                  )}
+                            </td>
+                            <td
+                              style={
+                                togglebtn === true &&
+                                goneDate > new Date(item.date)
+                                  ? styles.background
+                                  : styles.backgroundColor
+                              }
+                            >
+                              {dayjs(item.date).format("MMM D YYYY")}
+                            </td>
+                            <td>
                               <Link href={`/putevent/${item._id}`}>
                                 <button
-                                style={
-                                  togglebtn===true && goneDate > new Date(item.date)
+                                  style={
+                                    togglebtn === true &&
+                                    goneDate > new Date(item.date)
                                       ? styles.background
                                       : styles.backgroundColor
-                                 }
+                                  }
                                 >
-                                  <MdEdit
-                                   
-                                  />
+                                  <MdEdit />
                                 </button>
                               </Link>
                             </td>
-                            <td  
-                           style={
-                            togglebtn===true && goneDate > new Date(item.date)
-                                ? styles.background
-                                : styles.backgroundColor
-                           }
-                            onClick={() => handleShow(item._id)}>
+                            <td
+                              style={
+                                togglebtn === true &&
+                                goneDate > new Date(item.date)
+                                  ? styles.background
+                                  : styles.backgroundColor
+                              }
+                              onClick={() => handleShow(item._id)}
+                            >
                               <MdDelete className="mdDelete" />
                             </td>
-                            <td ><BiDuplicate onClick={()=>duplicateEvent(item._id)} style={{cursor:"pointer"}}/></td>
+                            <td>
+                              <BiDuplicate
+                                onClick={() => duplicateEvent(item._id)}
+                                style={{ cursor: "pointer" }}
+                              />
+                            </td>
                             <Modal
                               show={show}
                               style={{ marginTop: "10rem" }}

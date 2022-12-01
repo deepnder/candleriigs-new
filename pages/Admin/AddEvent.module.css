@@ -115,20 +115,7 @@ margin-bottom: 2rem;
 .startTimeEvent{
 width: 45rem;
 }
-.lists{
-    margin-top: 1rem;
 
-}
-.lists .listIcon{
-    color:white;
-}
-.lists a{
-    text-decoration: none;
-    margin-left: 0.7rem;
-    color: #474343a7;
-    font-weight: 500;
-    font-size: 17px;
-}
 .datenewStyle input{
      box-shadow: 0px 0px 1px rgb(118, 108, 108);
    border: 1px solid rgb(206, 194, 194);

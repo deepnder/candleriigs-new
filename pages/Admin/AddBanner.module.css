@@ -7,7 +7,13 @@
     background: #003831;
 
 }
-
+.characterEdit{
+    position: relative;
+    left:40rem;
+    top: -1rem;
+    font-size: 0.8rem;
+    opacity: 60%;
+}
 .candleriggs{
     margin-top: 4rem;
 }
@@ -91,7 +97,7 @@ padding-bottom: 5rem;
 }
 .formStartBanner .mb-3 input{
     box-shadow: 0px 0px 2px rgb(118, 108, 108);
-    height: 3rem;
+    height: 4rem;
     width: 45rem;
 
 }
@@ -165,12 +171,12 @@ input::-webkit-inner-spin-button {
   -webkit-appearance: none;
   margin: 0;
 } */
-input[type="date"]::-webkit-datetime-edit { padding: 0px; }
-input[type="date"]::-webkit-datetime-edit-fields-wrapper { color: silver;font-size: 11px; margin-bottom: 0.2rem;}
-input[type="date"]::-webkit-datetime-edit-text { color: silver; padding: 0 0.3em; }
-input[type="date"]::-webkit-datetime-edit-month-field { color: silver;text-transform:uppercase;}
-input[type="date"]::-webkit-datetime-edit-day-field { color: silver;text-transform:uppercase;margin-left: 0.6rem; }
-input[type="date"]::-webkit-datetime-edit-year-field { color: silver;text-transform:uppercase; }
+.dateBanner::-webkit-datetime-edit { padding: 0px; }
+.dateBanner::-webkit-datetime-edit-fields-wrapper { color: silver;font-size: 11px; margin-bottom: 0.2rem;}
+.dateBanner::-webkit-datetime-edit-text { color: silver; padding: 0 0.3em; }
+.dateBanner::-webkit-datetime-edit-month-field { color: silver;text-transform:uppercase;}
+.dateBanner::-webkit-datetime-edit-day-field { color: silver;text-transform:uppercase;margin-left: 0.6rem; }
+.dateBanner::-webkit-datetime-edit-year-field { color: silver;text-transform:uppercase; }
 /* .TimeHeadingTime input{ */
     /* box-shadow: 0px 0px 1px rgb(118, 108, 108);
    border: 1px solid rgb(206, 194, 194);
@@ -178,7 +184,7 @@ input[type="date"]::-webkit-datetime-edit-year-field { color: silver;text-transf
    height: 2.5rem; */
 /* } */
 
-input[type="date"]::-webkit-calendar-picker-indicator { background:"";filter: opacity(50%);}
+/* .dateBanner::-webkit-calendar-picker-indicator { background:"";filter: opacity(50%);} */
 
 .timecols2 .col  img{
     margin-left: -1.3rem;
@@ -219,8 +225,8 @@ input[type="date"]::-webkit-calendar-picker-indicator { background:"";filter: op
     width: 45px;
     height: 50px;
 } */
-select
+/* select
 {
     border-radius: 12rem;
     color: rgb(91, 100, 100);
-}
+} */

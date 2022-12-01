@@ -1,8 +1,6 @@
 import {  MdDelete } from "react-icons/md";
 import { HiPencil } from "react-icons/hi";
-import dashboardimage from "./AdminImages/dashboardimage.png";
 import { AiOutlinePlus } from "react-icons/ai";
-// import "./ReportsAboutEvent.css";
 import Link from "next/link";
 import { useState } from "react";
 import { useEffect } from "react";
@@ -11,6 +9,9 @@ import Button from "react-bootstrap/Button";
 import Form from "react-bootstrap/Form";
 import Modal from "react-bootstrap/Modal";
 import dayjs from "dayjs";
+import Image from "next/image";
+import dashboardimage from "./AdminImages/dashboardimage.png";
+import styles from "../Admin/ReportsAboutEvent.module.css";
 
 export default function ReportAboutGallery() {
   const [show, setShow] = useState(false);
@@ -55,42 +56,65 @@ export default function ReportAboutGallery() {
    <>
    <div className="exceedContainer">
     <div className="ReportContainer ">
-        <div className="row container">
+        <div className="row container" style={{margin:"0px",padding:"0px"}}>
         <Dashboard/>
-          <div className="ReportEventRightSide col col-sm-6 ">
-            {/* <div className="dashboardHeadings">
-              <span className="DashboardBox">
-                <img src={dashboardimage} alt="" />
-                <img className="dashboardwrite" src={Dashboardwrite} alt="" />
-              </span>
-            </div> */}
-             <div className="dashboardHeadings">
-                <span className="DashboardBox" style={{'display':'flex'}}>
-                  <img src={dashboardimage} style={{'width':'20px','height':'22px','marginTop':"4px"}} alt="" />
-                  {/* <img className="dashboardwrite" src={Dashboardwrite} alt="" /> */}
-                  <h5 style={{"fontSize":"25px",'fontWeight':'500','marginLeft':"10px",'color':"white"}}>Dashboard</h5>
+          <div className="ReportEventRightSide col col-sm-6 " style={{marginLeft:"1.5rem"}}>
+          
+               <div
+                className={styles.dashboardHeadings}
+                style={{ background: "#270F33" }}
+              >
+                <span
+                  className={styles.DashboardBox}
+                  style={{ display: "flex" }}
+                >
+                  <Image
+                    src={dashboardimage}
+                    style={{ width: "20px", height: "22px", marginTop: "8px" }}
+                    alt=""
+                  />
+                  <h5
+                    style={{
+                      fontSize: "25px",
+                      fontWeight: "500",
+                      marginLeft: "10px",
+                      color: "white",
+                      marginTop: "5.6px",
+                    }}
+                  >
+                    Dashboard
+                  </h5>
                 </span>
               </div>
-            <div className="ReportsHeadings">
+            <div className={styles.ReportsHeadings}>
               <h5>Gallery</h5>
-              <div className="SearchAdd row">
-                <div className="ReportSearch col-6">
-                  <input
-                    type="search"
-                    name=""
-                    id=""
-                    placeholder="&#128269; Search"
-                  />
+              <div className={styles.SearchAdd} style={{ display: "flex" }}>
+                  <div className={styles.ReportSearch}>
+                    <input
+                      type="search"
+                      style={{
+                        width: "52.5rem",
+                        height: "4rem",
+                        borderRadius: "10px",
+                        border: "solid #dadde0",
+                      }}
+                      name=""
+                      id=""
+                      placeholder="&#128269; Search"
+                    />
+                  </div>
+                  <div className={styles.AddLeadForm}>
+                    <Link href="/add-banner">
+                      {" "}
+                      <button style={{ border: "none" }}>
+                        Add Image <AiOutlinePlus className="leadIcon" />{" "}
+                      </button>
+                    </Link>
+                  </div>
                 </div>
-                <div className="AddLeadForm col-6">
-              <Link href="/add-images">   <button>
-                    Add Image <AiOutlinePlus className="leadIcon" />{" "}
-                  </button></Link> 
-                </div>
-              </div>
-              <div className="reportTable">
+              <div className={styles.reportTable}>
                 <table>
-                  <tr className="tableheading">
+                  <tr className={styles.tableheading}>
                     <th colSpan="1">Image Name</th>
                     <th colSpan="1">Category</th>
                     <th colSpan="1">Uploaded Date</th>
@@ -98,7 +122,7 @@ export default function ReportAboutGallery() {
                     <th colSpan="1">Delete</th>
                   </tr>
                   {user && user.length ? user.map((userss, i) => (
-                    <tr className="tableData"  key={i}>
+                    <tr className={styles.tableData}  key={i}>
                    <td>{userss.uploadMainImage.slice(0,50)
 }</td>
                       <td>{userss.category}</td>
