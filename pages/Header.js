@@ -9,7 +9,7 @@ export default function Header() {
        
        <div className={styles.top_header}>
            <div className={styles.heading}>
-           <h1 style={{fontFamily:"Roboto"}} className= {styles.pWhatsOn}>Glasgow's Leading Event Space</h1>
+           <h1 style={{fontFamily:"Roboto"}} className= {styles.pWhatsOn}>Glasgow&apos;s Leading Event Space</h1>
            
            </div>
        

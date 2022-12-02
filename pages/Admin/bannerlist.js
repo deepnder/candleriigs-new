@@ -10,8 +10,8 @@ import Button from "react-bootstrap/Button";
 import dayjs from "dayjs";
 import Form from "react-bootstrap/Form";
 import Modal from "react-bootstrap/Modal";
-import styles from "../Admin/AddBanner.module.css";
-import style from "../Admin/ReportsAboutEvent.module.css";
+import styles from "../../styles/AddBanner.module.css"
+import style from "../../styles/ReportsAboutEvent.module.css"
 import Image from "next/image";
 import dashboardimage from "./AdminImages/dashboardimage.png";
 

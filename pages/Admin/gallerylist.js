@@ -11,7 +11,7 @@ import Modal from "react-bootstrap/Modal";
 import dayjs from "dayjs";
 import Image from "next/image";
 import dashboardimage from "./AdminImages/dashboardimage.png";
-import styles from "../Admin/ReportsAboutEvent.module.css";
+import styles from "../../styles/ReportsAboutEvent.module.css"
 
 export default function ReportAboutGallery() {
   const [show, setShow] = useState(false);

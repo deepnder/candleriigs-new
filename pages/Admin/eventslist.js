@@ -14,7 +14,7 @@ import { BiDuplicate } from "react-icons/bi";
 import dayjs from "dayjs";
 import Image from "next/image";
 import dashboardimage from "./AdminImages/dashboardimage.png";
-import styling from "../Admin/ReportsAboutEvent.module.css";
+import styling from "../../styles/ReportsAboutEvent.module.css"
 // import styles from "../Admin/AddBanner.module.css";
 
 export default function ReportsAboutEvent() {
@@ -107,7 +107,7 @@ export default function ReportsAboutEvent() {
                       aria-label="Close"
                     ></button>
                   </div>
-                  <div class="modal-body">
+                  <div className="modal-body">
                     <p>Modal body text goes here.</p>
                   </div>
                   <div className="modal-footer">

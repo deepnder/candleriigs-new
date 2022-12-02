@@ -137,7 +137,7 @@ export default function Venue() {
             <p>
               Events are the name of the game at 18 Candleriggs, where live
               music and cabaret reign supreme. From burlesque shows and circus
-              troupes to comedy nights and luxe shows, it's at the top of its
+              troupes to comedy nights and luxe shows, it&apos;s at the top of its
               game when it comes to providing guests with a wholly unique
               drinking and dining experience in the city. Top hats? Sparkles?
               And feather boas? These all come as standard.
@@ -149,7 +149,7 @@ export default function Venue() {
             <p className={styles.paraSectionP} style={{color:"#000000"}}>
               Events are the name of the game at 18 Candleriggs, where live
               music and cabaret reign supreme. From burlesque shows and circus
-              troupes to comedy nights and luxe shows, it's at the top of its
+              troupes to comedy nights and luxe shows, it&apos;s at the top of its
               game when it comes to providing guests with a wholly unique
               drinking and dining experience in the city. Top hats? Sparkles?
               And feather boas? These all come as standard.

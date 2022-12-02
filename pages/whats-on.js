@@ -14,7 +14,7 @@ import React, { Suspense } from "react";
 import dayjs from 'dayjs';
 import Link from 'next/link';
 
-export default function whatsOn(props) {
+export default function WhatsOn(props) {
     const [item, setItem] = useState(props.posts.eventData);
      const [data, setData] = useState([]);
      const [search,setSearch] = useState("");
@@ -256,13 +256,12 @@ export default function whatsOn(props) {
  </>
   )
 }
-// export async function  getStaticProps() {
-// const res = await fetch("https://candleriggs-staging-73rkv.ondigitalocean.app/api/getActiveEvents")
-// const posts = await res.json();
-// console.log(posts)
-// return {
-//   props:{
-//     posts
-//   }
-// }
-// }
+export async function  getStaticProps() {
+const res = await fetch("https://candleriggs-staging-73rkv.ondigitalocean.app/api/getActiveEvents")
+const posts = await res.json();
+return {
+  props:{
+    posts
+  }
+}
+}

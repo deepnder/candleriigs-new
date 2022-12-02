@@ -8,6 +8,7 @@ import axios from "axios";
 import Dashboard from "./Dashboard";
 import { BsPlusLg } from "react-icons/bs";
 import { ThreeDots } from "react-loader-spinner";
+import Image from "next/image";
 
 export default function AddEvent() {
   const [isButtonDisabled, setisButtonDisabled] = useState(false);
@@ -274,7 +275,7 @@ export default function AddEvent() {
               <form onSubmit={handleSubmit}>
                 <div className="dashboardHeadings">
                   <span className="DashboardBox" style={{ display: "flex" }}>
-                    <img
+                    <Image
                       src={dashboardimage}
                       style={{
                         width: "20px",
@@ -310,7 +311,7 @@ export default function AddEvent() {
                           </div>
 
                           <div className="LinesImagesBanner">
-                            <img
+                            <Image
                               src={Lines}
                               alt=""
                               style={{ width: "20rem", height: "28rem" }}
@@ -320,7 +321,7 @@ export default function AddEvent() {
                           <div className="dragingpara2">
                             {selectedFile ? (
                               selectedFile && (
-                                <img
+                                <Image
                                   style={{
                                     marginTop: "-13rem",
                                     marginLeft: "-2.1rem",
@@ -336,9 +337,9 @@ export default function AddEvent() {
                                 htmlFor="uploadMainImage"
                                 style={{ position: "relative", bottom: "75px" }}
                               >
-                                <img src={dragCloud} alt="" />
+                                <Image src={dragCloud} alt="" />
                                 {selectedFile && (
-                                  <img alt="slide" src={preview} />
+                                  <Image alt="slide" src={preview} />
                                 )}
                                 <p style={{ marginLeft: "-2.5rem" }}>
                                   Click to upload Image size 375*180
@@ -352,10 +353,10 @@ export default function AddEvent() {
                               accept="image/*"
                               style={{ display: "none" }}
                             ></input>
-                            {/* <img src={selectedFile} /> */}
+                            {/* <Image src={selectedFile} /> */}
 
                             {/* <p>Drag and drop or browse to choose a file</p> */}
-                            {/* {selectedFile && <img src={preview}/>} */}
+                            {/* {selectedFile && <Image src={preview}/>} */}
                           </div>
                           <button
                             className="btn btn-danger"
@@ -376,7 +377,7 @@ export default function AddEvent() {
                             <p>Supports: PNG , JPEG (Max Size : 200KB )</p>
                           </div>
                           <div className="LinesImagesBanner">
-                            <img
+                            <Image
                               src={Lines}
                               alt=""
                               style={{ width: "20rem", height: "28rem" }}
@@ -386,7 +387,7 @@ export default function AddEvent() {
                           <div className="dragingpara2">
                             {selectedFiles ? (
                               selectedFiles && (
-                                <img
+                                <Image
                                   alt="slide"
                                   style={{
                                     marginTop: "-13rem",
@@ -402,12 +403,12 @@ export default function AddEvent() {
                                 htmlFor="uploadMobileImage"
                                 style={{ position: "relative", bottom: "75px" }}
                               >
-                                <img src={dragCloud} alt="" />
+                                <Image src={dragCloud} alt="" />
                                 <p style={{ marginLeft: "-2.5rem" }}>
                                   Click to Upload Image size 280*380
                                 </p>
                                 {selectedFiles && (
-                                  <img alt="slide" src={previews} />
+                                  <Image alt="slide" src={previews} />
                                 )}
                               </label>
                             )}
@@ -420,8 +421,8 @@ export default function AddEvent() {
                               style={{ display: "none" }}
                             ></input>
                             {/* <p>Drag and drop or browse to choose a file</p> */}
-                            {/* {selectedFiles && <img src={previews}/>} */}
-                            {/* <img src={selectedFiles}/> */}
+                            {/* {selectedFiles && <Image src={previews}/>} */}
+                            {/* <Image src={selectedFiles}/> */}
                           </div>
                           <button
                             className="btn btn-danger"

@@ -21,7 +21,7 @@ const Navbar = dynamic(() => import("./NavBar"), {
 const Footer = dynamic(() => import("./Footer"), {
   ssr: false
 });
-export default function index(props) {
+export default function Index(props) {
   const [item, setItem] = useState(props.posts.eventData);
   const [items, setItems] = useState([]);
   const [user, setUser] = useState([]);
@@ -68,13 +68,13 @@ export default function index(props) {
               <>
                 <span className={styles.soldOut}>
                   {imagess.eventType === "Sold Out" ? (
-                    <Image 
-                      src={soldOut}
+                    <Image  alt="preview"
+                      src={soldOut} priority
                       className={styles.desktopBannerSold}
                     />
                   ) : imagess.eventType === "Cancelled" ? (
-                    <Image 
-                      src={cancelled}
+                    <Image alt="preview"
+                      src={cancelled} priority
                       className={styles.desktopBannerSold}
                     />
                   ) : null}
@@ -82,7 +82,7 @@ export default function index(props) {
                 <div className={`${styles["fContImagesDesktop"]} ${styles["fContImages"]}`} key={i}>
                   <Image width={450} height={450}
                     src={imagess.addBannerImage}
-                    className="img-fluid"
+                    className="img-fluid" priority
                     alt=""
                   />
                 </div>
@@ -91,7 +91,7 @@ export default function index(props) {
                 </div>
                 <div className={`${styles["fContImages"]} ${styles["fContImagesMobile"]}`}>
                   <Image width={450} height={450}
-                    src={imagess.addMobileBannerImage}
+                    src={imagess.addMobileBannerImage} priority
                     className={styles.addMobileBannerImageMobile}
                     alt=""
                   />
@@ -101,13 +101,13 @@ export default function index(props) {
                 </div>
                 <span className={styles.soldOutMobile}>
                   {imagess.eventType === "Sold Out" ? (
-                    <Image 
-                      src={soldOutMobile}
+                    <Image alt="preview"
+                      src={soldOutMobile} priority
                       className={styles.soldOutMobileImage}
                     />
                   ) : imagess.eventType === "Cancelled" ? (
-                    <Image
-                      src={camcelledMobile}
+                    <Image alt="preview"
+                      src={camcelledMobile} priority
                       className={styles.soldOutMobileImage}
                     />
                   ) : null}
@@ -129,10 +129,10 @@ export default function index(props) {
                       textAlign: "center",
                     }}
                   >
-                    What's On At Glasgow's Coolest Event Space.
+                    What&apos;s On At Glasgow&apos;s Coolest Event Space.
                   </p>
                   <p className={styles.pWhat_on2}>
-                    What's On At Glasgow's Leading Event Space
+                    What&apos;s On At Glasgow&apos;s Leading Event Space
                   </p>
 
                   <p
@@ -143,7 +143,7 @@ export default function index(props) {
                       fontWeight: "500",
                     }}
                   >
-                    <a
+                    <Link
                       style={{
                         textDecoration: "none",
                         color: "Black",
@@ -152,7 +152,7 @@ export default function index(props) {
                       href="/"
                     >
                       View All
-                    </a>
+                    </Link>
                   </p>
                 </div>
 
@@ -464,14 +464,13 @@ export default function index(props) {
   );
 };
 
-// export default Home;
 export async function  getStaticProps() {
 const res = await fetch("https://candleriggs-staging-73rkv.ondigitalocean.app/api/getActiveEvents");
 const posts = await res.json();
-// console.log(posts)
 return {
   props:{
     posts
+
   }
   }
 }

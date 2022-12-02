@@ -6,6 +6,7 @@ import Lines from "../Admin/AdminImages/Lines.png"
 import { useState, useEffect } from "react";
 import axios from "axios";
 import Dashboard from "./Dashboard";
+import Image from "next/image";
 import ButtonLoader from "./ButtonLoader";
 
 
@@ -208,7 +209,7 @@ export default function MustSeeEvents() {
               <form onSubmit={handleSubmit}>
                 <div className="dashboardHeadings">
                   <span className="DashboardBox" style={{ display: "flex" }}>
-                    <img
+                    <Image
                       src={dashboardimage}
                       style={{
                         width: "20px",
@@ -243,7 +244,7 @@ export default function MustSeeEvents() {
                           </div>
 
                           <div className="LinesImagesBanner">
-                            <img
+                            <Image
                               src={Lines}
                               alt=""
                               style={{ width: "515px", height: "550px" }}
@@ -253,7 +254,7 @@ export default function MustSeeEvents() {
                           <div className="dragingpara2">
                             {mustEventSeeFile ? (
                               mustEventSeeFile && (
-                                <img
+                                <Image
                                   style={{
                                     marginTop: "-19.5rem",
                                     marginLeft: "-2.1rem",
@@ -273,9 +274,9 @@ export default function MustSeeEvents() {
                                   left: "5rem",
                                 }}
                               >
-                                <img src={dragCloud} alt="" />
+                                <Image src={dragCloud} alt="" />
                                 {mustEventSeeFile && (
-                                  <img alt="slide" src={previewFile} />
+                                  <Image alt="slide" src={previewFile} />
                                 )}
                                 <p style={{ marginLeft: "-2.5rem" }}>
                                   Click to Upload Image size : 515 *550
@@ -289,10 +290,10 @@ export default function MustSeeEvents() {
                               accept="image/*"
                               style={{ display: "none" }}
                             ></input>
-                            {/* <img src={selectedFile} /> */}
+                            {/* <Image src={selectedFile} /> */}
 
                             {/* <p>Drag and drop or browse to choose a file</p> */}
-                            {/* {selectedFile && <img src={preview}/>} */}
+                            {/* {selectedFile && <Image src={preview}/>} */}
                           </div>
                           <button
                             className="btn btn-danger"
@@ -320,7 +321,7 @@ export default function MustSeeEvents() {
                             <p>Supports: PNG , JPEG (Max Size : 200KB )</p>
                           </div>
                           <div className="LinesImagesBanner">
-                            <img
+                            <Image
                               src={Lines}
                               alt=""
                               style={{ width: "251px", height: "271px" }}
@@ -330,7 +331,7 @@ export default function MustSeeEvents() {
                           <div className="dragingpara2">
                             {mustEventSeeImageFiles ? (
                               mustEventSeeImageFiles && (
-                                <img
+                                <Image
                                   alt="slide"
                                   style={{
                                     marginTop: "-2rem",
@@ -350,12 +351,12 @@ export default function MustSeeEvents() {
                                   left: "-1.7rem",
                                 }}
                               >
-                                <img src={dragCloud} alt="" />
+                                <Image src={dragCloud} alt="" />
                                 <p style={{ marginLeft: "-2.5rem" }}>
                                   Click to Upload Image size : 515 *550
                                 </p>
                                 {mustEventSeeImageFiles && (
-                                  <img alt="slide" src={previewsFiles} />
+                                  <Image alt="slide" src={previewsFiles} />
                                 )}
                               </label>
                             )}
@@ -368,8 +369,8 @@ export default function MustSeeEvents() {
                               style={{ display: "none" }}
                             ></input>
                             {/* <p>Drag and drop or browse to choose a file</p> */}
-                            {/* {selectedFiles && <img src={previews}/>} */}
-                            {/* <img src={selectedFiles}/> */}
+                            {/* {selectedFiles && <Image src={previews}/>} */}
+                            {/* <Image src={selectedFiles}/> */}
                           </div>
                           <button
                             className="btn btn-danger"
