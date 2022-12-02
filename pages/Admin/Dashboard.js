@@ -5,7 +5,8 @@ import {BsImage} from 'react-icons/bs';
 import {RiLogoutCircleFill} from 'react-icons/ri'
 import {TbBellRinging} from 'react-icons/tb';
 import Link from "next/link"
-import styles from "../Admin/Dashboard.module.css";
+import Image from 'next/image';
+import styles from "../../styles/Dashboard.module.css"
 export default function Dashboard() {
   // const navigate = useNavigate();
   const logout = () => {
@@ -15,7 +16,9 @@ export default function Dashboard() {
   return (
     <>
      <div style={{background:"#270F33"}} className={`${styles["col-1"]} ${styles["addEvent"]}`}>
-          <Link href="/">  <img className="candleriggs" style={{'width':'200px'}} src="https://18-candleriggs.fra1.digitaloceanspaces.com/logo1.png" alt="" /></Link>
+          <Link href="/"> 
+           <Image className="candleriggs" width={200} height={200} style={{'width':'200px'}} src="https://18-candleriggs.fra1.digitaloceanspaces.com/logo1.png" alt="" />
+           </Link>
             <div className={styles.addEventLinks}>
               <div className={styles.addeventImage}>
               <div className={styles.lists}>

@@ -5,7 +5,7 @@ import Dashboard from "./Dashboard";
 import axios from "axios";
 import { ThreeDots } from "react-loader-spinner";
 import Lines from "../Admin/AdminImages/Lines.png"  
-import styles from "../Admin/AddBanner.module.css"
+import styles from "../../styles/AddBanner.module.css"
 import Image from "next/image";
 
 
@@ -320,13 +320,13 @@ console.log(data.category)
                           </p>
                         </div>
                         <div className={styles.LinesImagesBanner}>
-                          <img src={Lines} alt="" />
+                          <Image src={Lines} alt="" />
                         </div>
 
                         <div className={styles.dragingpara2}>
                         {uploadMobileImage ? (
                             uploadMobileImage && (
-                              <img
+                              <Image
                                 alt="preview"
                                 style={{
                                   marginTop: "-5rem",
@@ -339,7 +339,7 @@ console.log(data.category)
                             )
                           ) : (
                             <label htmlFor="uploadMobileImage">
-                              <img
+                              <Image
                                 style={{
                                   marginTop: "-5rem",
                                   marginLeft: "-8.1rem",
@@ -350,7 +350,7 @@ console.log(data.category)
                                 alt=""
                               />
                               {uploadMobileImage && (
-                                <img alt="preview" src={previews} />
+                                <Image alt="preview" src={previews} />
                               )}
                               {/* <p style={{marginLeft:"-2.5rem"}}>Drag and drop or browse to choose a file</p> */}
                             </label>
@@ -365,7 +365,7 @@ console.log(data.category)
                             style={{ display: "none" }}
                           ></input>
                           {/* <p>Drag and drop or browse to choose a file</p> */}
-                          {/* {uploadMobileImage && <img src={previews}/>} */}
+                          {/* {uploadMobileImage && <Image src={previews}/>} */}
                         </div>
                       </div>
                       <div className="col">
@@ -377,13 +377,13 @@ console.log(data.category)
                         </div>
 
                         <div className={styles.LinesImagesBanner}>
-                          <img src={Lines} alt="" />
+                          <Image src={Lines} alt="" />
                         </div>
 
                         <div className={styles.dragingpara2}>
                         {uploadMainImage ? (
                             uploadMainImage && (
-                              <img
+                              <Image
                                 alt="preview"
                                 style={{
                                   marginTop: "-5rem",
@@ -396,7 +396,7 @@ console.log(data.category)
                             )
                           ) : (
                             <label htmlFor="uploadMainImage">
-                              <img
+                              <Image
                                 style={{
                                   marginTop: "-5rem",
                                   marginLeft: "-8.1rem",
@@ -407,7 +407,7 @@ console.log(data.category)
                                 alt=""
                               />
                               {uploadMainImage && (
-                                <img alt="preview" src={preview} />
+                                <Image alt="preview" src={preview} />
                               )}
                               {/* <p style={{marginLeft:"-2.5rem"}}>Drag and drop or browse to choose a file</p> */}
                             </label>
@@ -421,7 +421,7 @@ console.log(data.category)
                           ></input>
 
                           {/* <p>Drag and drop or browse to choose a file</p> */}
-                          {/* {uploadMainImage && <img src={preview}/>} */}
+                          {/* {uploadMainImage && <Image src={preview}/>} */}
                         </div>
                       </div>
 <div style={{ marginLeft: "0rem" }} className=" col">
@@ -432,13 +432,13 @@ console.log(data.category)
                           </p>
                         </div>
                         <div className={styles.LinesImagesBanner}>
-                          <img style={{"width":'12rem',"height":"15rem"}} src={Lines} alt="" />
+                          <Image style={{"width":'12rem',"height":"15rem"}} src={Lines} alt="" />
                         </div>
 
                         <div className={styles.dragingpara2}>
                           {smallMobileImage ? (
                             smallMobileImage && (
-                              <img
+                              <Image
                                 alt="slide"
                                 style={{
                                   marginTop: "0rem",
@@ -455,11 +455,11 @@ console.log(data.category)
                             
                             "marginTop":"25px"
                             }} htmlFor="smallMobileImage">
-                              <img 
+                              <Image 
                               style={{width:"13rem","marginLeft":"-5rem","height":"11rem","marginTop":"-2rem"}}
                               src={data.smallMobileImage} alt="" />
                               {smallMobileImage && (
-                                <img alt="slide" src={data.smallMobileImage} />
+                                <Image alt="slide" src={data.smallMobileImage} />
                               )}
                               <p style={{ marginLeft: "-2.5rem" }}>
                              
@@ -477,7 +477,7 @@ console.log(data.category)
                             style={{ display: "none" }}
                           ></input>
                           {/* <p>Drag and drop or browse to choose a file</p> */}
-                          {/* {uploadMobileImage && <img src={previews}/>} */}
+                          {/* {uploadMobileImage && <Image src={previews}/>} */}
                         </div>
                       
                       </div>
@@ -490,13 +490,13 @@ console.log(data.category)
                           </p>
                         </div>
                         <div className={styles.LinesImagesBanner}>
-                          <img src={Lines} alt="" />
+                          <Image src={Lines} alt="" />
                         </div>
 
                         <div className={styles.dragingpara2}>
                           {bigMobileImage ? (
                             bigMobileImage && (
-                              <img
+                              <Image
                                 alt="slide"
                                 style={{
                                   marginTop: "-5rem",
@@ -509,9 +509,9 @@ console.log(data.category)
                             )
                           ) : (
                             <label htmlFor="bigMobileImage">
-                              <img style={{"width":"21rem","height":"15rem","marginLeft":"-8rem","marginTop":"-5rem"}} src={data.bigMobileImage} alt="" />
+                              <Image style={{"width":"21rem","height":"15rem","marginLeft":"-8rem","marginTop":"-5rem"}} src={data.bigMobileImage} alt="" />
                               {bigMobileImage && (
-                                <img alt="slide" src={data.bigMobileImage} />
+                                <Image alt="slide" src={data.bigMobileImage} />
 
                               )}
                               <p style={{ marginLeft: "-2.5rem" }}>
@@ -529,7 +529,7 @@ console.log(data.category)
                             style={{ display: "none" }}
                           ></input>
                           {/* <p>Drag and drop or browse to choose a file</p> */}
-                          {/* {uploadMobileImage && <img src={previews}/>} */}
+                          {/* {uploadMobileImage && <Image src={previews}/>} */}
                         </div>
                         
                       </div>

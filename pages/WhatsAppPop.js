@@ -4,7 +4,7 @@ import SvgComponent from "./SvgComponent";
 import styles from "../styles/WhatsApp.module.css"
 import WhatsAppSVG from './WhatsAppSVG';
 
-export default function whatsAppPop() {
+export default function WhatsAppPop() {
     
       let hide = {
         display: "none",

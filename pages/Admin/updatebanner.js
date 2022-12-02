@@ -1,5 +1,5 @@
 
-import styles from "../Admin/AddBanner.module.css"
+import styles from "../../styles/AddBanner.module.css"
 import axios from "axios";
 import { useState, useEffect } from "react";
 import Dashboard from "./Dashboard";
@@ -172,13 +172,13 @@ export default function PutBanner() {
 
                         <div className={styles.LinesImagesBanner}>
                           {/* these are just 80% of the 1440x692 so it fits on my laptop screen but keeps the ratio */}
-                          <img src={Lines} alt="" style={{width:"1024px",height:"553px"}} />
+                          <Image src={Lines} alt="" style={{width:"1024px",height:"553px"}} />
                         </div>
 
                         <div className={styles.dragingpara2}>
                           {selectedFile ? (
                             selectedFile && (
-                              <img
+                              <Image
                                 style={{
                                   marginTop: "-20rem",
                                   marginLeft: "-2.1rem",
@@ -191,7 +191,7 @@ export default function PutBanner() {
                             )
                           ) : (
                             <label htmlFor="addBannerImage">
-                              <img
+                              <Image
                                style={{
                                  marginTop: "-19.5rem",
                                  marginLeft: "-8rem",
@@ -202,7 +202,7 @@ export default function PutBanner() {
                                 alt="preview"
                               />
                               {selectedFile && (
-                                <img alt="preview" src={preview} />
+                                <Image alt="preview" src={preview} />
                               )}
                             </label>
                           )}
@@ -216,7 +216,7 @@ export default function PutBanner() {
                           ></input>
 
                           {/* <p>Drag and drop or browse to choose a file</p>
-                        {selectedFile && <img src={preview}/>} */}
+                        {selectedFile && <Image src={preview}/>} */}
                         </div>
                       </div>
 
@@ -228,13 +228,13 @@ export default function PutBanner() {
                           </p>
                         </div>
                         <div className={styles.LinesImagesBanner}>
-                          <img src={Lines} alt="" style={{width:"645px",height:"360px"}}/>
+                          <Image src={Lines} alt="" style={{width:"645px",height:"360px"}}/>
                         </div>
 
                         <div className={styles.dragingpara2} >
                           {selectedFilephone ? (
                             selectedFilephone && (
-                              <img
+                              <Image
                                 alt="preview"
                                 style={{
                                   marginTop:"-8rem",
@@ -247,7 +247,7 @@ export default function PutBanner() {
                             )
                           ) : (
                             <label htmlFor="addMobileBannerImage" >
-                              <img
+                              <Image
                                 style={{
                                   marginTop:"-7.5rem",
                                   marginLeft: "-8rem",
@@ -258,7 +258,7 @@ export default function PutBanner() {
                                 alt="preview"
                               />
                               {selectedFilephone && (
-                                <img alt="preview" src={previews} />
+                                <Image alt="preview" src={previews} />
                               )}
                             </label>
                           )}

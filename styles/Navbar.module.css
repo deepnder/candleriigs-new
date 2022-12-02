@@ -2,6 +2,7 @@
  .navbarImage{
 	margin-left: 4rem;
 	width: 6rem;
+    height: auto;
 }
 .navbarHeader {
 	display: flex;

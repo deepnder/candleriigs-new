@@ -8,6 +8,7 @@ import Dashboard from "./Dashboard";
 import axios from "axios";
 import ButtonLoader from "./ButtonLoader";
 import { ThreeDots } from "react-loader-spinner";
+import Image from "next/image";
 
 export default function AddImage() {
   const [isButtonDisabled, setisButtonDisabled] = useState(false);
@@ -202,14 +203,14 @@ useEffect(() => {
             <form onSubmit={handleSubmit}>
               {/* <div className="dashboardHeadings">
                 <span className="DashboardBox">
-                  <img src={dashboardimage} alt="" />
-                  <img className="dashboardwrite" src={Dashboardwrite} alt="" />
+                  <Image src={dashboardimage} alt="" />
+                  <Image className="dashboardwrite" src={Dashboardwrite} alt="" />
                 </span>
               </div> */}
                <div className="dashboardHeadings">
                 <span className="DashboardBox" style={{'display':'flex'}}>
-                  <img src={dashboardimage} style={{'width':'20px','height':'22px','marginTop':"4px"}} alt="" />
-                  {/* <img className="dashboardwrite" src={Dashboardwrite} alt="" /> */}
+                  <Image src={dashboardimage} style={{'width':'20px','height':'22px','marginTop':"4px"}} alt="" />
+                  {/* <Image className="dashboardwrite" src={Dashboardwrite} alt="" /> */}
                   <h5 style={{"fontSize":"25px",'fontWeight':'500','marginLeft':"10px",'color':"white"}}>Dashboard</h5>
                 </span>
               </div>
@@ -229,13 +230,13 @@ useEffect(() => {
                           </p>
                         </div>
                         <div className="LinesImagesBanner">
-                          <img src={Lines} alt="" />
+                          <Image src={Lines} alt="" />
                         </div>
 
                         <div className="dragingpara2">
                           {selectedFilephone ? (
                             selectedFilephone && (
-                              <img
+                              <Image
                                 alt="slide"
                                 style={{
                                   marginTop: "-5rem",
@@ -248,9 +249,9 @@ useEffect(() => {
                             )
                           ) : (
                             <label htmlFor="uploadMobileImage">
-                              <img src={dragCloud} alt="" />
+                              <Image src={dragCloud} alt="" />
                               {selectedFilephone && (
-                                <img alt="slide" src={previews} />
+                                <Image alt="slide" src={previews} />
                               )}
                               <p style={{ marginLeft: "-2.5rem" }}>
                               Click to Upload
@@ -268,7 +269,7 @@ Image size 305*290
                             style={{ display: "none" }}
                           ></input>
                           {/* <p>Drag and drop or browse to choose a file</p> */}
-                          {/* {selectedFilephone && <img src={previews}/>} */}
+                          {/* {selectedFilephone && <Image src={previews}/>} */}
                         </div>
                         <button
                           className="btn btn-danger"
@@ -292,13 +293,13 @@ Image size 305*290
                         </div>
 
                         <div className="LinesImagesBanner">
-                          <img   style={{"width":"29rem",'height':"40rem"}} src={Lines} alt="" />
+                          <Image   style={{"width":"29rem",'height':"40rem"}} src={Lines} alt="" />
                         </div>
 
                         <div className="dragingpara2" style={{"position":"relative","left":"44px"}}>
                           {selectedFile ? (
                             selectedFile && (
-                              <img
+                              <Image
                                 alt="slide"
                                 style={{
                                   marginTop: "-25rem",
@@ -313,11 +314,11 @@ Image size 305*290
                             <label    
                             
                             htmlFor="uploadMainImage">
-                              <img src={dragCloud}
+                              <Image src={dragCloud}
                               style={{"position":"relative","bottom":"10rem", marginLeft: "1rem"}}
                               alt="" />
                               {selectedFile && (
-                                <img alt="slide" src={preview} />
+                                <Image alt="slide" src={preview} />
                               )}
                               <p style={{"position":"relative","bottom":"10rem", marginLeft: "-1.5rem" }}>
                               Click to Upload
@@ -334,7 +335,7 @@ Image size 630*600
                           ></input>
 
                           {/* <p>Drag and drop or browse to choose a file</p> */}
-                          {/* {selectedFile && <img src={preview}/>} */}
+                          {/* {selectedFile && <Image src={preview}/>} */}
                         </div>
                         <button
                           className="btn btn-danger"
@@ -358,13 +359,13 @@ Image size 630*600
                           </p>
                         </div>
                         <div className="LinesImagesBanner">
-                          <img style={{"width":'12rem',"height":"15rem"}} src={Lines} alt="" />
+                          <Image style={{"width":'12rem',"height":"15rem"}} src={Lines} alt="" />
                         </div>
 
                         <div className="dragingpara2">
                           {smallMobileImage ? (
                             smallMobileImage && (
-                              <img
+                              <Image
                                 alt="slide"
                                 style={{
                                   marginTop: "0rem",
@@ -381,9 +382,9 @@ Image size 630*600
                             
                             "marginTop":"25px"
                             }} htmlFor="smallMobileImage">
-                              <img src={dragCloud} alt="" />
+                              <Image src={dragCloud} alt="" />
                               {smallMobileImage && (
-                                <img alt="slide" src={preview1} />
+                                <Image alt="slide" src={preview1} />
                               )}
                               <p style={{ marginLeft: "-2.5rem" }}>
                               Click to upload
@@ -402,7 +403,7 @@ Image size 130*130
                             style={{ display: "none" }}
                           ></input>
                           {/* <p>Drag and drop or browse to choose a file</p> */}
-                          {/* {selectedFilephone && <img src={previews}/>} */}
+                          {/* {selectedFilephone && <Image src={previews}/>} */}
                         </div>
                         <button
                           className="btn btn-danger"
@@ -425,13 +426,13 @@ Image size 130*130
                           </p>
                         </div>
                         <div className="LinesImagesBanner">
-                          <img src={Lines} alt="" />
+                          <Image src={Lines} alt="" />
                         </div>
 
                         <div className="dragingpara2">
                           {bigMobileImage ? (
                             bigMobileImage && (
-                              <img
+                              <Image
                                 alt="slide"
                                 style={{
                                   marginTop: "-5rem",
@@ -444,9 +445,9 @@ Image size 130*130
                             )
                           ) : (
                             <label htmlFor="bigMobileImage">
-                              <img src={dragCloud} alt="" />
+                              <Image src={dragCloud} alt="" />
                               {bigMobileImage && (
-                                <img alt="slide" src={preview2} />
+                                <Image alt="slide" src={preview2} />
 
                               )}
                               <p style={{ marginLeft: "-2.5rem" }}>
@@ -465,7 +466,7 @@ Image size 282*272
                             style={{ display: "none" }}
                           ></input>
                           {/* <p>Drag and drop or browse to choose a file</p> */}
-                          {/* {selectedFilephone && <img src={previews}/>} */}
+                          {/* {selectedFilephone && <Image src={previews}/>} */}
                         </div>
                         <button
                           className="btn btn-danger"

@@ -16,6 +16,7 @@ import { BsPlusLg } from "react-icons/bs";
 import { ThreeDots } from "react-loader-spinner";
 import { useState } from "react";
 import Lines from "../Admin/AdminImages/Lines.png"
+import Image from "next/image";
 
 
 export default function PutEvent() {
@@ -329,18 +330,18 @@ export default function PutEvent() {
             <form onSubmit={handleSubmit}>
               {/* <div className="dashboardHeadings">
                 <span className="DashboardBox">
-                  <img src={dashboardimage} alt="" />
-                  <img className="dashboardwrite" src={Dashboardwrite} alt="" />
+                  <Image src={dashboardimage} alt="" />
+                  <Image className="dashboardwrite" src={Dashboardwrite} alt="" />
                 </span>
               </div> */}
               <div className="dashboardHeadings">
                 <span className="DashboardBox" style={{ display: "flex" }}>
-                  <img
+                  <Image
                     src={dashboardimage}
                     style={{ width: "20px", height: "22px", marginTop: "4px" }}
                     alt=""
                   />
-                  {/* <img className="dashboardwrite" src={Dashboardwrite} alt="" /> */}
+                  {/* <Image className="dashboardwrite" src={Dashboardwrite} alt="" /> */}
                   <h5
                     style={{
                       fontSize: "25px",
@@ -426,13 +427,13 @@ export default function PutEvent() {
                         </div>
 
                         <div className="LinesImagesBanner">
-                          <img src={Lines} alt="" />
+                          <Image src={Lines} alt="" />
                         </div>
 
                         <div className="dragingpara2">
                           {selectedFile ? (
                             selectedFile && (
-                              <img 
+                              <Image 
                                 alt="slider"
                                 style={{
                                   marginTop: "-5rem",
@@ -445,7 +446,7 @@ export default function PutEvent() {
                             )
                           ) : (
                             <label htmlFor="uploadMainImage">
-                              <img
+                              <Image
                                 style={{
                                   marginTop: "-5rem",
                                   marginLeft: "-8.1rem",
@@ -456,7 +457,7 @@ export default function PutEvent() {
                                 alt=""
                               />
                               {selectedFile && (
-                                <img alt="slider" src={preview} />
+                                <Image alt="slider" src={preview} />
                               )}
                               {/* <p style={{marginLeft:"-2.5rem"}}>Drag and drop or browse to choose a file</p> */}
                             </label>
@@ -470,7 +471,7 @@ export default function PutEvent() {
                           ></input>
 
                           {/* <p>Drag and drop or browse to choose a file</p>
-                        {selectedFile && <img src={preview}/>} */}
+                        {selectedFile && <Image src={preview}/>} */}
                         </div>
                       </div>
 
@@ -480,13 +481,13 @@ export default function PutEvent() {
                           <p>Supports: PNG , JPEG (Max Size : 200KB )</p>
                         </div>
                         <div className="LinesImagesBanner">
-                          <img src={Lines} alt="" />
+                          <Image src={Lines} alt="" />
                         </div>
 
                         <div className="dragingpara2">
                           {selectedFiles ? (
                             selectedFiles && (
-                              <img
+                              <Image
                                 alt="slider"
                                 style={{
                                   marginTop: "-5rem",
@@ -499,7 +500,7 @@ export default function PutEvent() {
                             )
                           ) : (
                             <label htmlFor="uploadMobileImage">
-                              <img
+                              <Image
                                 style={{
                                   marginTop: "-5rem",
                                   marginLeft: "-8.1rem",
@@ -511,7 +512,7 @@ export default function PutEvent() {
                               />
                               {/* <p style={{marginLeft:"-2.5rem"}}>Drag and drop or browse to choose a file</p> */}
                               {selectedFiles && (
-                                <img alt="slider" src={previews} />
+                                <Image alt="slider" src={previews} />
                               )}
                             </label>
                           )}
@@ -524,7 +525,7 @@ export default function PutEvent() {
                             style={{ display: "none" }}
                           ></input>
                           {/* <p>Drag and drop or browse to choose a file</p>
-                        {selectedFiles && <img src={previews}/>} */}
+                        {selectedFiles && <Image src={previews}/>} */}
                         </div>
                       </div>
                     </div>

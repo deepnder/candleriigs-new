@@ -6,6 +6,7 @@ import Dashboard from "./Dashboard";
 import { ThreeDots } from "react-loader-spinner";
 import dragCloud from "../Admin/AdminImages/dragCloud.png";
 import Lines from "../Admin/AdminImages/Lines.png"
+import Image from "next/image";
 
 export default function AddBanner() {
   const [isButtonDisabled, setisButtonDisabled] = useState(false);
@@ -155,13 +156,13 @@ export default function AddBanner() {
               <form onSubmit={handleSubmit}>
                 {/* <div className="dashboardHeadings">
               <span className="DashboardBox">
-                <img src={dashboardimage} alt="" />
-                <img className="dashboardwrite" src={Dashboardwrite} alt="" />
+                <Image src={dashboardimage} alt="" />
+                <Image className="dashboardwrite" src={Dashboardwrite} alt="" />
               </span>
             </div> */}
                 <div className="dashboardHeadings">
                   <span className="DashboardBox" style={{ display: "flex" }}>
-                    <img
+                    <Image
                       src={dashboardimage}
                       style={{
                         width: "20px",
@@ -170,7 +171,7 @@ export default function AddBanner() {
                       }}
                       alt=""
                     />
-                    {/* <img className="dashboardwrite" src={Dashboardwrite} alt="" /> */}
+                    {/* <Image className="dashboardwrite" src={Dashboardwrite} alt="" /> */}
                     <h5
                       style={{
                         fontSize: "25px",
@@ -198,7 +199,7 @@ export default function AddBanner() {
 
                           <div className="LinesImagesBanner">
                             {/* these are just 80% of the 1440x692 so it fits on my laptop screen but keeps the ratio */}
-                            <img
+                            <Image
                               src={Lines}
                               alt=""
                               style={{ width: "1021px", height: "553px" }}
@@ -208,7 +209,7 @@ export default function AddBanner() {
                           <div className="dragingpara2">
                             {selectedFile ? (
                               selectedFile && (
-                                <img
+                                <Image
                                   alt="slide"
                                   style={{
                                     marginTop: "-20rem",
@@ -221,7 +222,7 @@ export default function AddBanner() {
                               )
                             ) : (
                               <label htmlFor="addBannerImage">
-                                <img
+                                <Image
                                   src={dragCloud}
                                   alt=""
                                   style={{
@@ -231,7 +232,7 @@ export default function AddBanner() {
                                   }}
                                 />
                                 {selectedFile && (
-                                  <img alt="slide" src={preview} />
+                                  <Image alt="slide" src={preview} />
                                 )}
                                 <p
                                   style={{
@@ -253,7 +254,7 @@ export default function AddBanner() {
                             ></input>
 
                             {/* <p>Drag and drop or browse to choose a file</p> */}
-                            {/* {selectedFile && <img src={preview}/>} */}
+                            {/* {selectedFile && <Image src={preview}/>} */}
                           </div>
                           <button
                             className="btn btn-danger"
@@ -277,7 +278,7 @@ export default function AddBanner() {
                             <p>Supports : PNG, JPEG (Max Size : 500 KB)</p>
                           </div>
                           <div className="LinesImagesBanner">
-                            <img
+                            <Image
                               src={Lines}
                               alt=""
                               style={{ width: "640px", height: "360px" }}
@@ -287,7 +288,7 @@ export default function AddBanner() {
                           <div className="dragingpara2">
                             {selectedFilephone ? (
                               selectedFilephone && (
-                                <img
+                                <Image
                                   alt="slide"
                                   style={{
                                     marginTop: "-8rem",
@@ -300,7 +301,7 @@ export default function AddBanner() {
                               )
                             ) : (
                               <label htmlFor="addMobileBannerImage">
-                                <img
+                                <Image
                                   style={{
                                     marginLeft: "9rem",
                                     marginTop: "0rem",
@@ -309,7 +310,7 @@ export default function AddBanner() {
                                   alt=""
                                 />
                                 {selectedFilephone && (
-                                  <img alt="slide" src={previews} />
+                                  <Image alt="slide" src={previews} />
                                 )}
                                 <p style={{ marginLeft: "6.8rem" }}>
                                   Click to upload Image size 640*360

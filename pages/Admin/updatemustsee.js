@@ -8,7 +8,8 @@ import { useState, useEffect } from "react";
 import axios from "axios";
 import Dashboard from "./Dashboard";
 import ButtonLoader from "./ButtonLoader";
-import Lines from "../Admin/AdminImages/Lines.png"
+import Lines from "../Admin/AdminImages/Lines.png";
+import Image from "next/image";
 
 export default function PutMustSeeEvent() {
   // const navigate = useNavigate();
@@ -209,7 +210,7 @@ export default function PutMustSeeEvent() {
               <form onSubmit={handleSubmit}>
                 <div className="dashboardHeadings">
                   <span className="DashboardBox" style={{ display: "flex" }}>
-                    <img
+                    <Image
                       src={dashboardimage}
                       style={{
                         width: "20px",
@@ -244,7 +245,7 @@ export default function PutMustSeeEvent() {
                           </div>
 
                           <div className="LinesImagesBanner">
-                            <img
+                            <Image
                               src={Lines}
                               alt=""
                               style={{ width: "515px", height: "550px" }}
@@ -254,7 +255,7 @@ export default function PutMustSeeEvent() {
                           <div className="dragingpara2">
                             {mustEventSeeFile ? (
                               mustEventSeeFile && (
-                                <img
+                                <Image
                                   style={{
                                     marginTop: "-19.5rem",
                                     marginLeft: "-2.1rem",
@@ -271,9 +272,9 @@ export default function PutMustSeeEvent() {
                                 style={{
                                 }}
                               >
-                                <img src={event.image} style={{width:"32.2rem",marginTop:"-19.5rem",height:"31rem",marginLeft:"-8rem"}} alt="" />
+                                <Image src={event.image} style={{width:"32.2rem",marginTop:"-19.5rem",height:"31rem",marginLeft:"-8rem"}} alt="" />
                                 {mustEventSeeFile && (
-                                  <img alt="slide" src={previewFile} />
+                                  <Image alt="slide" src={previewFile} />
                                 )}
                      
                               </label>
@@ -301,7 +302,7 @@ export default function PutMustSeeEvent() {
                             <p>Supports: PNG , JPEG (Max Size : 200KB )</p>
                           </div>
                           <div className="LinesImagesBanner">
-                            <img
+                            <Image
                               src={Lines}
                               alt=""
                               style={{ width: "251px", height: "271px" }}
@@ -311,7 +312,7 @@ export default function PutMustSeeEvent() {
                           <div className="dragingpara2">
                             {mustEventSeeImageFiles ? (
                               mustEventSeeImageFiles && (
-                                <img
+                                <Image
                                   alt="slide"
                                   style={{
                                     marginTop: "-2rem",
@@ -330,10 +331,10 @@ export default function PutMustSeeEvent() {
                                   marginLeft:"-2rem",
                                 }}
                               >
-                                <img src={event.mobileImage} alt="" style={{width:"15.8rem",height:"12rem"}} />
+                                <Image src={event.mobileImage} alt="" style={{width:"15.8rem",height:"12rem"}} />
                              
                                 {mustEventSeeImageFiles && (
-                                  <img alt="slide" src={previewsFiles} />
+                                  <Image alt="slide" src={previewsFiles} />
                                 )}
                               </label>
                             )}
@@ -346,8 +347,8 @@ export default function PutMustSeeEvent() {
                               style={{ display: "none" }}
                             ></input>
                             {/* <p>Drag and drop or browse to choose a file</p> */}
-                            {/* {selectedFiles && <img src={previews}/>} */}
-                            {/* <img src={selectedFiles}/> */}
+                            {/* {selectedFiles && <Image src={previews}/>} */}
+                            {/* <Image src={selectedFiles}/> */}
                           </div>
                        
                         </div>

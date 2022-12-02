@@ -10,7 +10,8 @@ import { useEffect } from "react";
 import Dashboard from "./Dashboard";
 import Image from "next/image";
 import dashboardimage from "../Admin/AdminImages/dashboardimage.png";
-import styles from "../Admin/ReportsAboutEvent.module.css";
+import styles from "../../styles/ReportsAboutEvent.module.css";
+
 
 export default function ReportsMustSee() {
   const [user, setUser] = useState([]);

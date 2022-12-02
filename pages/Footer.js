@@ -4,7 +4,7 @@ import axios from "axios";
 import { ToastContainer, toast } from "react-toastify";
 import "react-toastify/dist/ReactToastify.css";
 import styles from "../styles/Footer.module.css";
-import { IoIosMail } from "react-icons/io";
+import {IoIosMail} from "react-icons/io"
 import { BsFillTelephoneFill, BsFacebook, BsInstagram, BsWindowSidebar} from "react-icons/bs";
 
 const Footer = () => {
